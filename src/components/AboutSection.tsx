@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
+import caroabout from "figma:asset/about-me.png"
 
 export function AboutSection() {
   return (
@@ -21,7 +22,7 @@ export function AboutSection() {
             >
               <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-white">
                 <ImageWithFallback
-                  src="https://images.unsplash.com/photo-1737652423804-42701a064e3d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdCUyMGRlc2lnbmVyfGVufDF8fHx8MTc1NjUwMDk5Mnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                  src={caroabout}
                   alt="About Me Portrait"
                   className="w-full h-[500px] object-cover"
                 />

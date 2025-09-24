@@ -1,6 +1,10 @@
 import { motion } from 'motion/react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import { ArrowUpRight } from 'lucide-react';
+import CHS from "figma:asset/CHS-Cover.png"
+import lastmile from "figma:asset/lastmile-cover.png"
+import redsalud from "figma:asset/redsalud-cover.png"
+import juntos from "figma:asset/Juntos-cover.png"
 
 const portfolioData = [
   {
@@ -8,7 +12,7 @@ const portfolioData = [
     category: "Healthcare",
     title: "CHS Care Management",
     subtitle: "Smarter care coordination for children and seniors with complex needs",
-    image: "https://images.unsplash.com/photo-1747224317356-6dd1a4a078fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoZWFsdGhjYXJlJTIwZGFzaGJvYXJkJTIwaW50ZXJmYWNlJTIwbWVkaWNhbHxlbnwxfHx8fDE3NTcxNzI3OTZ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    image: CHS,
     tags: ["Healthcare", "Patient Engagement", "Accessibility"],
     metrics: [
       { value: "+35%", label: "Adherence rate" },
@@ -21,7 +25,7 @@ const portfolioData = [
     category: "Logistics",
     title: "Inmediatum Lastmile",
     subtitle: "Reducing delivery time by 67% through intelligent route planning",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsYXB0b3AlMjBkYXNoYm9hcmQlMjBhbmFseXRpY3N8ZW58MXx8fHwxNzU2NTE0MTU0fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    image: lastmile,
     tags: ["B2B SaaS", "Logistics Technologies", "Dashboard design"],
     metrics: [
       { value: "9x", label: "Route optimization time" },
@@ -31,28 +35,28 @@ const portfolioData = [
   },
   {
     id: 3,
-    category: "Mobile Experience",
-    title: "FinTech Mobile Banking App",
-    subtitle: "Simplifying complex financial workflows for modern users",
-    image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBkZXNpZ258ZW58MXx8fHwxNzU2NTE0MjA3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    tags: ["Fintech", "Mobile First", "Security"],
+    category: "Restaurant Tech",
+    title: "+ Juntos Empowering Local Restaurants: Online Menus, Zero Barriers",
+    subtitle: "From Customer Feedback to Seamless Menu Creation: A Journey to Digital Independence",
+    image: juntos,
+    tags: ["Menu Design", "Online Orders", "Digital Transformation"],
     metrics: [
-      { value: "4.8★", label: "App rating" },
-      { value: "+156%", label: "User engagement" },
-      { value: "62%", label: "Task completion" }
+      { value: "+2,500", label: "small restaurants onboarded in first year" },
+      { value: "40%", label: "Increase in successful menu setups" },
+      { value: "+30%", label: "satisfaction rate in Play Store reviews after update" }
     ]
   },
   {
     id: 4,
-    category: "Enterprise Design",
-    title: "Analytics Dashboard Redesign",
-    subtitle: "Transforming complex data into actionable insights",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsYXB0b3AlMjBkYXNoYm9hcmQlMjBhbmFseXRpY3N8ZW58MXx8fHwxNzU2NTE0MTU0fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    tags: ["Enterprise", "Data Viz", "B2B"],
+    category: "Telehealth",
+    title: "Red de Salud",
+    subtitle: "Redefining Patient Management in Telehealth",
+    image: redsalud,
+    tags: ["Telehealth", "SaaS", "Healthcare Technology"],
     metrics: [
-      { value: "3x", label: "Processing speed" },
-      { value: "71%", label: "Task success" },
-      { value: "9.2/10", label: "User satisfaction" }
+      { value: "45%", label: "Faster record updates" },
+      { value: "60%", label: "More follow-ups" },
+      { value: "3x", label: "Microlearning engagement" }
     ]
   }
 ];

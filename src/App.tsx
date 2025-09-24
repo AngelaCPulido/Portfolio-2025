@@ -6,6 +6,7 @@ import { AboutSection } from './components/AboutSection';
 import { ContactSection } from './components/ContactSection';
 import { CaseStudy } from './components/CaseStudy';
 
+
 export default function App() {
   const [currentView, setCurrentView] = useState<'portfolio' | 'caseStudy'>('portfolio');
   const [currentCaseStudyId, setCurrentCaseStudyId] = useState<number>(1);
