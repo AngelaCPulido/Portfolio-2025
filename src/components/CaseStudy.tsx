@@ -338,6 +338,25 @@ export function CaseStudy({
         { category: "Satisfaction & Retention", metrics: ["NPS score", "Platform usage", "Emergency response"] }
       ],
 
+      // Research insights
+      researchsubtitle: "lastmile We started by listening to those most affected—patients, caregivers, and providers. Our goal was to uncover what truly gets in the way of adherence and engagement.",
+        
+      researchFindings: [
+          { 
+            number: "72%",
+            subtitle: "of patients forget daily tasks without proper reminders",
+          },
+          {
+            number: "80%",
+            subtitle: "of providers face delays with outdated patient data",
+          },
+          {
+            number: "65%",
+            subtitle: "of caregivers struggle with complex care plan navigation",
+          },
+      ],
+        
+
       // Design process insights
       processInsights: [
         {
@@ -484,13 +503,23 @@ export function CaseStudy({
           { category: "Satisfaction & Retention", metrics: ["NPS score", "Platform usage", "Emergency response"] }
         ],
         
-        // Research insights
-        researchFindings: [
-          { stat: "72%", insight: "Restaurant owners value speed and clarity over complex customization." },
-          { stat: "80%", insight: "of providers face delays with outdated patient data" },
-          { stat: "65%", insight: "of caregivers struggle with complex care plan navigation" },
-          { stat: "50%", insight: "of seniors need simplified interfaces for effective interaction" }
-        ],
+      // Research insights
+      researchsubtitle: " Juntos We started by listening to those most affected—patients, caregivers, and providers. Our goal was to uncover what truly gets in the way of adherence and engagement.",
+        
+      researchFindings: [
+          { 
+            number: "72%",
+            subtitle: "of patients forget daily tasks without proper reminders",
+          },
+          {
+            number: "80%",
+            subtitle: "of providers face delays with outdated patient data",
+          },
+          {
+            number: "65%",
+            subtitle: "of caregivers struggle with complex care plan navigation",
+          },
+      ],
         
         // User personas
         personas: [
@@ -722,29 +751,23 @@ export function CaseStudy({
           },
         ],
 
-        // Research insights
-        researchFindings: [
-          {
-            stat: "85%",
-            insight:
-              "of healthcare professionals struggle with fragmented patient records",
+      // Research insights
+      researchsubtitle: " red de salud We started by listening to those most affected—patients, caregivers, and providers. Our goal was to uncover what truly gets in the way of adherence and engagement.",
+        
+      researchFindings: [
+          { 
+            number: "72%",
+            subtitle: "of patients forget daily tasks without proper reminders",
           },
           {
-            stat: "70%",
-            insight:
-              "of patients miss follow-up appointments due to poor communication",
+            number: "80%",
+            subtitle: "of providers face delays with outdated patient data",
           },
           {
-            stat: "60%",
-            insight:
-              "of doctors report inefficient patient education tools",
+            number: "65%",
+            subtitle: "of caregivers struggle with complex care plan navigation",
           },
-          {
-            stat: "90%",
-            insight:
-              "of specialists need better cross-team collaboration features",
-          },
-        ],
+      ],
 
         // User personas
         personas: [
