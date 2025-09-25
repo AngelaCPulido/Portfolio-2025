@@ -148,6 +148,26 @@ export function CaseStudy({
             description: "of caregivers struggle with complex care plan navigation",
           },
         ],
+
+        // Pain points
+
+        painPoints: [
+          {
+            title: "Low adherence",
+            description:
+              "Patients frequently missed medications and daily tasks due to poor reminders.",
+          },
+          {
+            title: "Overwhelmed caregivers",
+            description:
+              "Family members lacked clear tools to monitor and support care activities.",
+          },
+          {
+            title: "Fragmented data",
+            description:
+              "Providers struggled with incomplete and dispersed health records.",
+          },
+        ],
         
         // User personas
         personas: [
@@ -411,6 +431,25 @@ export function CaseStudy({
         },
       ],
         
+      // Pain points
+
+        painPoints: [
+          {
+            title: "Low adherence",
+            description:
+              "Patients frequently missed medications and daily tasks due to poor reminders.",
+          },
+          {
+            title: "Overwhelmed caregivers",
+            description:
+              "Family members lacked clear tools to monitor and support care activities.",
+          },
+          {
+            title: "Fragmented data",
+            description:
+              "Providers struggled with incomplete and dispersed health records.",
+          },
+        ],
 
       // Design process insights
       processInsights: [
@@ -597,6 +636,26 @@ export function CaseStudy({
           },
         ],
         
+        // Pain points
+
+        painPoints: [
+          {
+            title: "Low adherence",
+            description:
+              "Patients frequently missed medications and daily tasks due to poor reminders.",
+          },
+          {
+            title: "Overwhelmed caregivers",
+            description:
+              "Family members lacked clear tools to monitor and support care activities.",
+          },
+          {
+            title: "Fragmented data",
+            description:
+              "Providers struggled with incomplete and dispersed health records.",
+          },
+        ],
+
         // User personas
         personas: [
           {
@@ -864,6 +923,26 @@ export function CaseStudy({
           {
             title: "65%",
             description: "of caregivers struggle with complex care plan navigation",
+          },
+        ],
+
+        // Pain points
+
+        painPoints: [
+          {
+            title: "Low adherence",
+            description:
+              "Patients frequently missed medications and daily tasks due to poor reminders.",
+          },
+          {
+            title: "Overwhelmed caregivers",
+            description:
+              "Family members lacked clear tools to monitor and support care activities.",
+          },
+          {
+            title: "Fragmented data",
+            description:
+              "Providers struggled with incomplete and dispersed health records.",
           },
         ],
 
@@ -1585,8 +1664,12 @@ export function CaseStudy({
                       transition={{ duration: 0.4, delay: index * 0.2 }}
                       viewport={{ once: true }}
                       className="p-6 bg-white rounded-2xl shadow-md"
+                      whileHover={{
+                        y: -4,
+                        transition: { duration: 0.3 },
+                      }}
                     >
-                      <h3 className="text-xl font-semibold mb-2">{insight.title}</h3>
+                      <h3 className="text-5xl font-bold text-blue-500 mb-4">{insight.title}</h3>
                       <p className="text-gray-600">{insight.description}</p>
                     </motion.div>
                   ))}
