@@ -102,6 +102,13 @@ export function CaseStudy({
         // Research insights
         researchsubtitle: "We started by listening to those most affected—patients, caregivers, and providers. Our goal was to uncover what truly gets in the way of adherence and engagement.",
         
+        researchtags: [
+          "Interviews",
+          "Shadowing",
+          "Surveys",
+          "Artifact Review",
+        ],
+        
         researchFindings: [
           { 
             number: "72%",
@@ -340,7 +347,14 @@ export function CaseStudy({
 
       // Research insights
       researchsubtitle: "lastmile We started by listening to those most affected—patients, caregivers, and providers. Our goal was to uncover what truly gets in the way of adherence and engagement.",
-        
+
+      researchtags: [
+        "Lastmile",
+        "Shadowing",
+        "Surveys",
+        "Artifact Review",
+      ], 
+
       researchFindings: [
           { 
             number: "72%",
@@ -505,6 +519,13 @@ export function CaseStudy({
         
       // Research insights
       researchsubtitle: " Juntos We started by listening to those most affected—patients, caregivers, and providers. Our goal was to uncover what truly gets in the way of adherence and engagement.",
+
+      researchtags: [
+        "Juntos",
+        "Shadowing",
+        "Surveys",
+        "Artifact Review",
+      ],
         
       researchFindings: [
           { 
@@ -753,7 +774,14 @@ export function CaseStudy({
 
       // Research insights
       researchsubtitle: " red de salud We started by listening to those most affected—patients, caregivers, and providers. Our goal was to uncover what truly gets in the way of adherence and engagement.",
-        
+      
+      researchtags: [
+        "Red",
+        "Shadowing",
+        "Surveys",
+        "Artifact Review",
+      ],
+
       researchFindings: [
           { 
             number: "72%",
@@ -1453,18 +1481,14 @@ export function CaseStudy({
                     Methods
                   </div>
                   <div className="flex items-center gap-4 text-gray-700">
-                    <span className="bg-white px-3 py-1 rounded-full text-sm font-medium">
-                      Interviews
-                    </span>
-                    <span className="bg-white px-3 py-1 rounded-full text-sm font-medium">
-                      Shadowing
-                    </span>
-                    <span className="bg-white px-3 py-1 rounded-full text-sm font-medium">
-                      Surveys
-                    </span>
-                    <span className="bg-white px-3 py-1 rounded-full text-sm font-medium">
-                      Artifact Review
-                    </span>
+                    {caseStudyData.researchtags.map((researchtag, index) => (
+                      <span
+                        key={index}
+                        className="bg-white px-3 py-1 rounded-full text-sm font-medium"
+                      >
+                        {researchtag}
+                      </span>
+                    ))}
                   </div>
                 </div>
               </motion.div>
