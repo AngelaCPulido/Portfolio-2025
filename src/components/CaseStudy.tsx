@@ -172,6 +172,26 @@ export function CaseStudy({
             icon: Speech,
           },
         ],
+
+
+        // Discovery Outcomes
+        discoveryOutcomes: [
+          {
+            title: "Defined top 3 hypotheses for prototyping",
+            description: "Focused on adherence, caregiver engagement, and provider coordination.",
+            icon: Target,
+          },
+          {
+            title: "Identified critical pain points",
+            description: "Data fragmentation, limited reminders, and poor caregiver visibility.",
+            icon: Eye,
+          },
+          {
+            title: "Mapped research insights",
+            description: "Clear link between usability gaps and patient adherence.",
+            icon: BookOpen,
+          },
+        ],
         
         // User personas
         personas: [
@@ -1728,110 +1748,45 @@ export function CaseStudy({
 
 
               {/* Discovery Outcomes */}
-              <motion.div
-                className="mb-20"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: true }}
-              >
-                <div>
-                  <h3 className="text-2xl font-bold text-black mb-8 text-center">
-                    Outcomes of Discovery Phase
-                  </h3>
-                  <p className="text-center text-gray-600 mb-12 text-lg">
-                    Defined top 3 hypotheses for prototyping:
-                  </p>
-                  <div className="space-y-6">
-                    <motion.div
-                      className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 flex items-start gap-6"
-                      initial={{ opacity: 0, x: -30 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      transition={{ duration: 0.6, delay: 0.1 }}
-                      viewport={{ once: true }}
-                      whileHover={{
-                        x: 4,
-                        transition: { duration: 0.3 },
-                      }}
-                    >
-                      <div className="w-12 h-12 bg-green-500 rounded-2xl flex items-center justify-center flex-shrink-0">
-                        <TrendingUp
-                          size={24}
-                          className="text-white"
-                        />
-                      </div>
-                      <div>
-                        <h4 className="text-lg font-bold text-black mb-2">
-                          Provider Efficiency
-                        </h4>
-                        <p className="text-gray-600 leading-relaxed">
-                          Real-time data syncing improves
-                          provider efficiency and reduces manual
-                          data entry.
-                        </p>
-                      </div>
-                    </motion.div>
-
-                    <motion.div
-                      className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 flex items-start gap-6"
-                      initial={{ opacity: 0, x: -30 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      transition={{ duration: 0.6, delay: 0.2 }}
-                      viewport={{ once: true }}
-                      whileHover={{
-                        x: 4,
-                        transition: { duration: 0.3 },
-                      }}x
-                    >
-                      <div className="w-12 h-12 bg-green-500 rounded-2xl flex items-center justify-center flex-shrink-0">
-                        <Heart
-                          size={24}
-                          className="text-white"
-                        />
-                      </div>
-                      <div>
-                        <h4 className="text-lg font-bold text-black mb-2">
-                          Patient Adherence
-                        </h4>
-                        <p className="text-gray-600 leading-relaxed">
-                          Personalized reminders increase
-                          adherence by 25% through timely,
-                          relevant notifications.
-                        </p>
-                      </div>
-                    </motion.div>
-
-                    <motion.div
-                      className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 flex items-start gap-6"
-                      initial={{ opacity: 0, x: -30 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      transition={{ duration: 0.6, delay: 0.3 }}
-                      viewport={{ once: true }}
-                      whileHover={{
-                        x: 4,
-                        transition: { duration: 0.3 },
-                      }}
-                    >
-                      <div className="w-12 h-12 bg-green-500 rounded-2xl flex items-center justify-center flex-shrink-0">
-                        <Lightbulb
-                          size={24}
-                          className="text-white"
-                        />
-                      </div>
-                      <div>
-                        <h4 className="text-lg font-bold text-black mb-2">
-                          Educational Content
-                        </h4>
-                        <p className="text-gray-600 leading-relaxed">
-                          Simplified educational content
-                          improves comprehension and engagement
-                          for all age groups.
-                        </p>
-                      </div>
-                    </motion.div>
-                  </div>
-                </div>
-              </motion.div>
+              {caseStudyData?.discoveryOutcomes && (
+                <section data-section="discovery-outcomes">
+                  <motion.div
+                    className="mb-20"
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8 }}
+                    viewport={{ once: true }}
+                  >
+                    <h3 className="text-2xl font-bold text-black mb-8 text-center">Discovery Outcomes</h3>
+                    <p className="text-center text-gray-600 mb-12 text-lg">
+                      Defined top 3 hypotheses for prototyping:
+                    </p>
+                    <div className="space-y-6">
+                      {caseStudyData.discoveryOutcomes.map((outcome, index) => (
+                        <motion.div
+                          className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 flex items-start gap-6"
+                          initial={{ opacity: 0, x: -30 }}
+                          whileInView={{ opacity: 1, x: 0 }}
+                          transition={{ duration: 0.6, delay: 0.1 }}
+                          viewport={{ once: true }}
+                          whileHover={{
+                            x: 4,
+                            transition: { duration: 0.3 },
+                          }}
+                        >
+                          <div className="w-12 h-12 bg-green-500 rounded-2xl flex items-center justify-center flex-shrink-0">
+                            <outcome.icon className="text-white" />
+                          </div>
+                          <div>
+                            <h4 className="text-lg font-bold text-black mb-2">{outcome.title}</h4>
+                            <p className="text-gray-600 leading-relaxed">{outcome.description}</p>
+                          </div>
+                        </motion.div>
+                      ))}
+                    </div>
+                  </motion.div>
+                </section>
+              )}
 
               {/* Personas */}
               {caseStudyData.personas && (
