@@ -109,18 +109,18 @@ export function CaseStudy({
           "Artifact Review",
         ],
         
-        researchFindings: [
+        keyInsights: [
           { 
-            number: "72%",
-            subtitle: "of patients forget daily tasks without proper reminders",
+            title: "72%",
+            description: "of patients forget daily tasks without proper reminders",
           },
           {
-            number: "80%",
-            subtitle: "of providers face delays with outdated patient data",
+            title: "80%",
+            description: "of providers face delays with outdated patient data",
           },
           {
-            number: "65%",
-            subtitle: "of caregivers struggle with complex care plan navigation",
+            title: "65%",
+            description: "of caregivers struggle with complex care plan navigation",
           },
         ],
         
@@ -1504,52 +1504,21 @@ export function CaseStudy({
                 <h3 className="text-2xl font-bold text-black mb-12 text-center">
                   Key Insights
                 </h3>
+
                 <div className="grid md:grid-cols-3 gap-8">
-                  <motion.div
-                    className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 text-center"
-                    initial={{ opacity: 0, y: 50 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, delay: 0.1 }}
-                    viewport={{ once: true }}
-                  >
-                    <div className="text-5xl font-bold text-red-500 mb-4">
-                      72%
-                    </div>
-                    <p className="text-gray-600 leading-relaxed">
-                      of patients forget daily health tasks
-                    </p>
-                  </motion.div>
-
-                  <motion.div
-                    className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 text-center"
-                    initial={{ opacity: 0, y: 50 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, delay: 0.2 }}
-                    viewport={{ once: true }}
-                  >
-                    <div className="text-5xl font-bold text-orange-500 mb-4">
-                      80%
-                    </div>
-                    <p className="text-gray-600 leading-relaxed">
-                      of providers face data delays
-                    </p>
-                  </motion.div>
-
-                  <motion.div
-                    className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 text-center"
-                    initial={{ opacity: 0, y: 50 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, delay: 0.3 }}
-                    viewport={{ once: true }}
-                  >
-                    <div className="text-5xl font-bold text-blue-500 mb-4">
-                      50%
-                    </div>
-                    <p className="text-gray-600 leading-relaxed">
-                      of seniors need simplified interfaces
-                      (large text, audio)
-                    </p>
-                  </motion.div>
+                  {caseStudyData.keyInsights.map((insight, index) => (
+                    <motion.div
+                      key={index}
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.4, delay: index * 0.2 }}
+                      viewport={{ once: true }}
+                      className="p-6 bg-white rounded-2xl shadow-md"
+                    >
+                      <h3 className="text-xl font-semibold mb-2">{insight.title}</h3>
+                      <p className="text-gray-600">{insight.description}</p>
+                    </motion.div>
+                  ))}
                 </div>
               </motion.div>
 
