@@ -782,18 +782,18 @@ export function CaseStudy({
         "Artifact Review",
       ],
 
-      researchFindings: [
+      keyInsights: [
           { 
-            number: "72%",
-            subtitle: "of patients forget daily tasks without proper reminders",
+            title: "72%",
+            description: "of patients forget daily tasks without proper reminders",
           },
           {
-            number: "80%",
-            subtitle: "of providers face delays with outdated patient data",
+            title: "80%",
+            description: "of providers face delays with outdated patient data",
           },
           {
-            number: "65%",
-            subtitle: "of caregivers struggle with complex care plan navigation",
+            title: "65%",
+            description: "of caregivers struggle with complex care plan navigation",
           },
       ],
 
