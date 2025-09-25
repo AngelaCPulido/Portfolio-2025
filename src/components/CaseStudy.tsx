@@ -109,6 +109,31 @@ export function CaseStudy({
           "Artifact Review",
         ],
         
+      // Research insights
+        researchsubtitle: "lastmile We started by listening to those most affected—patients, caregivers, and providers. Our goal was to uncover what truly gets in the way of adherence and engagement.",
+
+        researchtags: [
+          "Lastmile",
+          "Shadowing",
+          "Surveys",
+          "Artifact Review",
+        ], 
+
+        researchFindings: [
+            { 
+              number: "72%",
+              subtitle: "of patients forget daily tasks without proper reminders",
+            },
+            {
+              number: "80%",
+              subtitle: "of providers face delays with outdated patient data",
+            },
+            {
+              number: "65%",
+              subtitle: "of caregivers struggle with complex care plan navigation",
+            },
+        ],
+
         keyInsights: [
           { 
             title: "72%",
@@ -355,6 +380,7 @@ export function CaseStudy({
         "Artifact Review",
       ], 
 
+
       researchFindings: [
           { 
             number: "72%",
@@ -368,6 +394,21 @@ export function CaseStudy({
             number: "65%",
             subtitle: "of caregivers struggle with complex care plan navigation",
           },
+      ],
+
+      keyInsights: [
+        { 
+          title: "72%",
+          description: "of patients forget daily tasks without proper reminders",
+        },
+        {
+          title: "80%",
+          description: "of providers face delays with outdated patient data",
+        },
+        {
+          title: "65%",
+          description: "of caregivers struggle with complex care plan navigation",
+        },
       ],
         
 
@@ -517,30 +558,44 @@ export function CaseStudy({
           { category: "Satisfaction & Retention", metrics: ["NPS score", "Platform usage", "Emergency response"] }
         ],
         
-      // Research insights
-      researchsubtitle: " Juntos We started by listening to those most affected—patients, caregivers, and providers. Our goal was to uncover what truly gets in the way of adherence and engagement.",
+        // Research insights
+        researchsubtitle: " Juntos We started by listening to those most affected—patients, caregivers, and providers. Our goal was to uncover what truly gets in the way of adherence and engagement.",
 
-      researchtags: [
-        "Juntos",
-        "Shadowing",
-        "Surveys",
-        "Artifact Review",
-      ],
+        researchtags: [
+          "Juntos",
+          "Shadowing",
+          "Surveys",
+          "Artifact Review",
+        ],
         
-      researchFindings: [
+        researchFindings: [
+            { 
+              number: "72%",
+              subtitle: "of patients forget daily tasks without proper reminders",
+            },
+            {
+              number: "80%",
+              subtitle: "of providers face delays with outdated patient data",
+            },
+            {
+              number: "65%",
+              subtitle: "of caregivers struggle with complex care plan navigation",
+            },
+        ],
+        keyInsights: [
           { 
-            number: "72%",
-            subtitle: "of patients forget daily tasks without proper reminders",
+            title: "72%",
+            description: "of patients forget daily tasks without proper reminders",
           },
           {
-            number: "80%",
-            subtitle: "of providers face delays with outdated patient data",
+            title: "80%",
+            description: "of providers face delays with outdated patient data",
           },
           {
-            number: "65%",
-            subtitle: "of caregivers struggle with complex care plan navigation",
+            title: "65%",
+            description: "of caregivers struggle with complex care plan navigation",
           },
-      ],
+        ],
         
         // User personas
         personas: [
@@ -772,17 +827,32 @@ export function CaseStudy({
           },
         ],
 
-      // Research insights
-      researchsubtitle: " red de salud We started by listening to those most affected—patients, caregivers, and providers. Our goal was to uncover what truly gets in the way of adherence and engagement.",
-      
-      researchtags: [
-        "Red",
-        "Shadowing",
-        "Surveys",
-        "Artifact Review",
-      ],
+        // Research insights
+        researchsubtitle: " red de salud We started by listening to those most affected—patients, caregivers, and providers. Our goal was to uncover what truly gets in the way of adherence and engagement.",
+        
+        researchtags: [
+          "Red",
+          "Shadowing",
+          "Surveys",
+          "Artifact Review",
+        ],
 
-      keyInsights: [
+        keyInsights: [
+            { 
+              title: "72%",
+              description: "of patients forget daily tasks without proper reminders",
+            },
+            {
+              title: "80%",
+              description: "of providers face delays with outdated patient data",
+            },
+            {
+              title: "65%",
+              description: "of caregivers struggle with complex care plan navigation",
+            },
+        ],
+
+        keyInsights: [
           { 
             title: "72%",
             description: "of patients forget daily tasks without proper reminders",
@@ -795,7 +865,7 @@ export function CaseStudy({
             title: "65%",
             description: "of caregivers struggle with complex care plan navigation",
           },
-      ],
+        ],
 
         // User personas
         personas: [
@@ -1501,6 +1571,7 @@ export function CaseStudy({
                 transition={{ duration: 0.8 }}
                 viewport={{ once: true }}
               >
+
                 <h3 className="text-2xl font-bold text-black mb-12 text-center">
                   Key Insights
                 </h3>
