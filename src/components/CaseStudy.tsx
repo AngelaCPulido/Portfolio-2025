@@ -100,11 +100,21 @@ export function CaseStudy({
         ],
         
         // Research insights
+        researchsubtitle: "We started by listening to those most affected—patients, caregivers, and providers. Our goal was to uncover what truly gets in the way of adherence and engagement.",
+        
         researchFindings: [
-          { stat: "72%", insight: "of patients forget daily tasks without proper reminders" },
-          { stat: "80%", insight: "of providers face delays with outdated patient data" },
-          { stat: "65%", insight: "of caregivers struggle with complex care plan navigation" },
-          { stat: "50%", insight: "of seniors need simplified interfaces for effective interaction" }
+          { 
+            number: "72%",
+            subtitle: "of patients forget daily tasks without proper reminders",
+          },
+          {
+            number: "80%",
+            subtitle: "of providers face delays with outdated patient data",
+          },
+          {
+            number: "65%",
+            subtitle: "of caregivers struggle with complex care plan navigation",
+          },
         ],
         
         // User personas
@@ -347,6 +357,30 @@ export function CaseStudy({
         }
       ],
 
+      // User journey & empathy map
+        userjourney: [
+          {
+            title: "Empathy map María",
+            description: "Empathy maps uncovering María’s needs, emotions, and behaviors",
+            image: empathychs1
+          },
+          {
+            title: "Empathy Map Laura",
+            description: "Empathy maps uncovering Laura’s needs, emotions, and behaviors",
+            image: empathychs2
+          },
+          {
+            title: "User Journey Transformation",
+            description: "Following María's daily routine, we mapped her experience before and after CHS implementation, identifying key friction points and improvement opportunities.",
+            image: userjourneychs
+          },
+          {
+            title: "Designing Clarity",
+            description: "An intuitive structure that organizes content and simplifies navigation",
+            image: sitemapchs
+          }
+        ],
+
       // Key features
       keyFeatures: [
         {
@@ -480,7 +514,7 @@ export function CaseStudy({
           }
         ],
         
-                // User journey & empathy map
+        // User journey & empathy map
         userjourney: [
           {
             title: "User Journey 1",
@@ -735,6 +769,30 @@ export function CaseStudy({
             image:
               "https://images.unsplash.com/photo-1659353888906-adb3e041693?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkb2N0b3IlMjBtZWRpY2FsJTIwcGVyc29uYXMlMjBoZWFsdGhjYXJlJTIwcHJvZmVzc2lvbmFsc3xlbnwxfHx8fDE3NTc5NzcyOTR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
           },
+        ],
+
+        // User journey & empathy map
+        userjourney: [
+          {
+            title: "Empathy map María",
+            description: "Empathy maps uncovering María’s needs, emotions, and behaviors",
+            image: empathychs1
+          },
+          {
+            title: "Empathy Map Laura",
+            description: "Empathy maps uncovering Laura’s needs, emotions, and behaviors",
+            image: empathychs2
+          },
+          {
+            title: "User Journey Transformation",
+            description: "Following María's daily routine, we mapped her experience before and after CHS implementation, identifying key friction points and improvement opportunities.",
+            image: userjourneychs
+          },
+          {
+            title: "Designing Clarity",
+            description: "An intuitive structure that organizes content and simplifies navigation",
+            image: sitemapchs
+          }
         ],
 
         // Design process insights
@@ -1291,7 +1349,7 @@ export function CaseStudy({
                 {caseStudyData.challenge}
               </p>
 
-              {(projectId === 1 || projectId === 2) &&
+              {(projectId === 1 || projectId === 2 || projectId === 3 || projectId === 4) &&
                 caseStudyData.northStar && (
                   <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-200">
                     <h3 className="text-lg font-bold text-black mb-2">
@@ -1348,9 +1406,10 @@ export function CaseStudy({
         </div>
       </section>
 
-      {/* Research & Discovery (for healthcare case studies) */}
-      {(projectId === 1 || projectId === 2) &&
+      {/* Research & Discovery */}
+      {(projectId === 1 || projectId === 2 || projectId === 3 || projectId === 4) &&
         caseStudyData.researchFindings && (
+          
           <section className="py-32 px-6">
             <div className="max-w-7xl mx-auto">
               <motion.div
@@ -1364,10 +1423,7 @@ export function CaseStudy({
                   Research & Discovery
                 </h2>
                 <p className="text-xl text-gray-600 max-w-4xl mx-auto font-light leading-relaxed mb-8">
-                  We started by listening to those most
-                  affected—patients, caregivers, and providers.
-                  Our goal was to uncover what truly gets in the
-                  way of adherence and engagement.
+                  {caseStudyData.researchsubtitle}
                 </p>
                 <div className="inline-flex items-center gap-6 bg-gray-50 rounded-2xl px-8 py-4">
                   <div className="text-sm text-gray-500 font-medium uppercase tracking-wide">
@@ -1696,10 +1752,11 @@ export function CaseStudy({
               )}
             </div>
           </section>
+
         )}
 
       {/* User Journey (CHS specific) */}
-      {(projectId === 1) && 
+      {(projectId === 1|| projectId === 2|| projectId === 3|| projectId === 4) && 
         <section className="py-32 px-6 bg-gray-50">
           <div className="max-w-7xl mx-auto">
             <motion.div
@@ -1759,6 +1816,7 @@ export function CaseStudy({
           </div>
         </section>
       }
+      
 
       {/* Design Process */}
       <section className="py-32 px-6">
