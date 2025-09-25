@@ -55,6 +55,7 @@ import {
   Activity,
   BookOpen,
   Shield,
+  Speech,
 } from "lucide-react";
 
 interface CaseStudyProps {
@@ -153,19 +154,22 @@ export function CaseStudy({
 
         painPoints: [
           {
-            title: "Low adherence",
+            title: "Outdated Patient Data",
             description:
-              "Patients frequently missed medications and daily tasks due to poor reminders.",
+              "Real-time patient information is not accessible, creating gaps in care coordination",
+            icon: Activity,
           },
           {
-            title: "Overwhelmed caregivers",
+            title: "Care plans difficult to follow",
             description:
-              "Family members lacked clear tools to monitor and support care activities.",
+              "Complex care plans lack visual clarity and step-by-step guidance for patients.",
+            icon: BookOpen,
           },
           {
-            title: "Fragmented data",
+            title: "Communication gaps",
             description:
-              "Providers struggled with incomplete and dispersed health records.",
+              "Fragmented communication between patients, caregivers, and healthcare providers.",
+            icon: Speech,
           },
         ],
         
@@ -438,16 +442,19 @@ export function CaseStudy({
             title: "Low adherence",
             description:
               "Patients frequently missed medications and daily tasks due to poor reminders.",
+            icon: Activity,
           },
           {
             title: "Overwhelmed caregivers",
             description:
               "Family members lacked clear tools to monitor and support care activities.",
+            icon: Activity,
           },
           {
             title: "Fragmented data",
             description:
               "Providers struggled with incomplete and dispersed health records.",
+            icon: Activity,
           },
         ],
 
@@ -643,16 +650,19 @@ export function CaseStudy({
             title: "Low adherence",
             description:
               "Patients frequently missed medications and daily tasks due to poor reminders.",
+            icon: Activity,
           },
           {
             title: "Overwhelmed caregivers",
             description:
               "Family members lacked clear tools to monitor and support care activities.",
+            icon: Activity,
           },
           {
             title: "Fragmented data",
             description:
               "Providers struggled with incomplete and dispersed health records.",
+            icon: Activity,
           },
         ],
 
@@ -933,16 +943,19 @@ export function CaseStudy({
             title: "Low adherence",
             description:
               "Patients frequently missed medications and daily tasks due to poor reminders.",
+            icon: Activity,
           },
           {
             title: "Overwhelmed caregivers",
             description:
               "Family members lacked clear tools to monitor and support care activities.",
+            icon: Activity,
           },
           {
             title: "Fragmented data",
             description:
               "Providers struggled with incomplete and dispersed health records.",
+            icon: Activity,
           },
         ],
 
@@ -1677,100 +1690,42 @@ export function CaseStudy({
               </motion.div>
 
               {/* Pain Points */}
-              <motion.div
-                className="mb-20"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: true }}
-              >
-                <div>
-                  <h3 className="text-2xl font-bold text-black mb-12 text-center">
-                    Critical Pain Points
-                  </h3>
-                  <div className="grid md:grid-cols-3 gap-8">
-                    <motion.div
-                      className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 text-center"
-                      initial={{ opacity: 0, y: 30 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.6, delay: 0.1 }}
-                      viewport={{ once: true }}
-                      whileHover={{
-                        y: -4,
-                        transition: { duration: 0.3 },
-                      }}
-                    >
-                      <div className="w-16 h-16 bg-red-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                        <Activity
-                          size={32}
-                          className="text-white"
-                        />
-                      </div>
-                      <h4 className="text-lg font-bold text-black mb-3">
-                        Outdated Patient Data
-                      </h4>
-                      <p className="text-gray-600 text-sm leading-relaxed">
-                        Real-time patient information is not
-                        accessible, creating gaps in care
-                        coordination
-                      </p>
-                    </motion.div>
+              {caseStudyData.painPoints && (
+                <section data-section="painpoints">
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ duration: 0.6 }}
+                    viewport={{ once: true }}
+                    className="mb-20"
+                  >
+                    <h3 className="text-2xl font-bold text-black mb-12 text-center">Pain Points</h3>
+                    <div className="grid md:grid-cols-3 gap-8">
+                      {caseStudyData.painPoints.map((point, index) => (
+                        <motion.div
+                          key={index}
+                          initial={{ opacity: 0, y: 20 }}
+                          whileInView={{ opacity: 1, y: 0 }}
+                          transition={{ duration: 0.4, delay: index * 0.2 }}
+                          viewport={{ once: true }}
+                          className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 text-center"
+                          whileHover={{
+                            y: -4,
+                            transition: { duration: 0.3 },
+                          }}
+                        >
+                          <div className="w-16 h-16 bg-red-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                            <point.icon className="text-white" />
+                          </div>
+                          <h3 className="text-xl font-semibold mb-2">{point.title}</h3>
+                          <p className="text-gray-600">{point.description}</p>
+                        </motion.div>
+                      ))}
+                    </div>
+                  </motion.div>
+                </section>
+              )}
 
-                    <motion.div
-                      className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 text-center"
-                      initial={{ opacity: 0, y: 30 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.6, delay: 0.2 }}
-                      viewport={{ once: true }}
-                      whileHover={{
-                        y: -4,
-                        transition: { duration: 0.3 },
-                      }}
-                    >
-                      <div className="w-16 h-16 bg-red-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                        <BookOpen
-                          size={32}
-                          className="text-white"
-                        />
-                      </div>
-                      <h4 className="text-lg font-bold text-black mb-3">
-                        Care plans difficult to follow
-                      </h4>
-                      <p className="text-gray-600 text-sm leading-relaxed">
-                        Complex care plans lack visual clarity
-                        and step-by-step guidance for patients
-                      </p>
-                    </motion.div>
-
-                    <motion.div
-                      className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 text-center"
-                      initial={{ opacity: 0, y: 30 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.6, delay: 0.3 }}
-                      viewport={{ once: true }}
-                      whileHover={{
-                        y: -4,
-                        transition: { duration: 0.3 },
-                      }}
-                    >
-                      <div className="w-16 h-16 bg-red-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                        <Shield
-                          size={32}
-                          className="text-white"
-                        />
-                      </div>
-                      <h4 className="text-lg font-bold text-black mb-3">
-                        Communication gaps
-                      </h4>
-                      <p className="text-gray-600 text-sm leading-relaxed">
-                        Fragmented communication between
-                        patients, caregivers, and healthcare
-                        providers
-                      </p>
-                    </motion.div>
-                  </div>
-                </div>
-              </motion.div>
 
               {/* Discovery Outcomes */}
               <motion.div
