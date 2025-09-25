@@ -1,14 +1,14 @@
 import { motion } from 'motion/react';
 import { Mail, Linkedin, ExternalLink, Download } from 'lucide-react';
-import logo from 'figma:asset/4e3d8d45c4b6bf9d9370037c58b6b7bf00c5aa0d.png';
+import logo from 'figma:asset/logo-bw.png';
 
 export function ContactSection() {
   const contactLinks = [
     {
       label: "Email",
-      href: "mailto:angela.carolina@designer.com",
+      href: "mailto:hola@angelacarolinapulido.com",
       icon: Mail,
-      description: "angela.carolina@designer.com"
+      description: "hola@angelacarolinapulido.com"
     },
     {
       label: "LinkedIn",
@@ -24,9 +24,9 @@ export function ContactSection() {
     },
     {
       label: "Download CV",
-      href: "/cv.pdf",
+      href: "/AngelaPulidoCV.pdf",
       icon: Download,
-      description: "PDF • 2.1MB"
+      description: "PDF • 11KB"
     }
   ];
 
@@ -136,10 +136,10 @@ export function ContactSection() {
               <img
                 src={logo}
                 alt="Ángela Carolina Logo"
-                className="h-10 w-auto object-contain brightness-0 invert"
+                className="h-10 w-auto object-contain "
               />
               <p className="text-gray-400 font-medium">
-                Product Designer
+                Senior Ux designer
               </p>
             </motion.div>
 
@@ -154,22 +154,7 @@ export function ContactSection() {
               <p className="text-gray-400 font-medium">
                 © 2025 Ángela Carolina. All rights reserved.
               </p>
-              <div className="flex justify-center md:justify-end gap-6 text-sm">
-                <motion.a 
-                  href="#"
-                  className="text-gray-400 hover:text-white transition-colors duration-200"
-                  whileHover={{ scale: 1.05 }}
-                >
-                  Privacy Policy
-                </motion.a>
-                <motion.a 
-                  href="#"
-                  className="text-gray-400 hover:text-white transition-colors duration-200"
-                  whileHover={{ scale: 1.05 }}
-                >
-                  Terms of Service
-                </motion.a>
-              </div>
+
             </motion.div>
           </div>
         </motion.div>

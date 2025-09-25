@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
-import dogImage from "figma:asset/efdf650844e538733bc8bd927c0ef3ac96714c78.png";
+import dogImage from "figma:asset/kiara.png";
+import caroimage from "figma:asset/caro-photo.png"
 
 export function HeroSection() {
   return (
@@ -14,7 +15,7 @@ export function HeroSection() {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <motion.h1
-            className="text-6xl md:text-7xl lg:text-8xl font-bold leading-none tracking-tight text-black"
+            className="text-5xl md:text-6xl lg:text-7xl font-bold leading-none tracking-tight text-black"
             whileHover={{
               scale: 1.01,
               transition: { duration: 0.2 },
@@ -91,7 +92,7 @@ export function HeroSection() {
               transition={{ duration: 0.4 }}
             >
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1737652423804-42701a064e3d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdCUyMGRlc2lnbmVyfGVufDF8fHx8MTc1NjUwMDk5Mnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                src={caroimage}
                 alt="Product Designer Portrait"
                 className="w-full h-[500px] lg:h-[600px] object-cover"
               />
@@ -143,7 +144,7 @@ export function HeroSection() {
                   className="absolute -top-14 left-1/2 transform -translate-x-1/2 bg-black text-white px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
                   initial={false}
                 >
-                  🐕 My creative companion
+                  I'm Kiara Woofs & wags to you!
                   <div className="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-black"></div>
                 </motion.div>
               </div>

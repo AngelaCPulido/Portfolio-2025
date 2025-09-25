@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
 import { Mail, Linkedin, ExternalLink, Download } from 'lucide-react';
-import logo from 'figma:asset/4e3d8d45c4b6bf9d9370037c58b6b7bf00c5aa0d.png';
+import logo from 'figma:asset/logo-angelacarolina.png';
 
 export function Header() {
   return (
@@ -61,7 +61,7 @@ export function Header() {
             {/* Social Links */}
             <div className="hidden lg:flex items-center gap-3">
               <motion.a
-                href="https://linkedin.com/in/angelacarolina"
+                href="https://www.linkedin.com/in/angela-pulido/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 bg-gray-100 rounded-full flex items-center justify-center text-black hover:bg-gray-200 transition-all duration-200"
@@ -79,7 +79,7 @@ export function Header() {
                 <ExternalLink size={16} />
               </motion.a>
               <motion.a
-                href="/cv.pdf"
+                href="/AngelaPulidoCV.pdf"
                 download
                 className="w-9 h-9 bg-gray-100 rounded-full flex items-center justify-center text-black hover:bg-gray-200 transition-all duration-200"
                 whileHover={{ scale: 1.1 }}
