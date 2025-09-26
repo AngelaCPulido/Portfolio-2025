@@ -31,6 +31,15 @@ import profile2chs from "figma:asset/Profile.png";
 import recordchs from "figma:asset/Record.png";
 //lastmile
 import herolastmile from "figma:asset/lastmile-hero.png";
+import onboardinglastmile from "figma:asset/Onboarding-lastmile.png";
+import personalastmile from "figma:asset/persona-lastmile.png";
+import insideslastmile from "figma:asset/Insides-lastmile.png";
+import ematrixlastmile from "figma:asset/Eisenhower-Matrix-lastmile.png";
+import competitionlastmile from "figma:asset/competition-lastmile.png";
+import interviewslastmile from "figma:asset/Interviews-lastmile.png";
+import wireframeslastmile from "figma:asset/wireframes-lastmile.png";
+import guideslastmile from "figma:asset/guias-b-a-lastmile.png";
+import maplastmile from "figma:asset/map-b-a-lastmile.png";
 import {
   Carousel,
   CarouselContent,
@@ -56,6 +65,8 @@ import {
   BookOpen,
   Shield,
   Speech,
+  NotebookPen,
+  MessageSquareX,
 } from "lucide-react";
 
 interface CaseStudyProps {
@@ -216,6 +227,9 @@ export function CaseStudy({
         ],
         
         // User journey & empathy map
+        
+        UnderstandingUser: "Empathy maps, journeys, and structures that reveal needs, emotions, and behaviors",
+
         userjourney: [
           {
             title: "Empathy map María",
@@ -418,7 +432,7 @@ export function CaseStudy({
       year: "2024",
       role: "Senior Product Designer",
       duration: "6 months",
-      heroImage: "https://images.unsplash.com/photo-1681514583222-0579e6835666?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsb2dpc3RpY3MlMjBkZWxpdmVyeSUyMG9wdGltaXphdGlvbnxlbnwxfHx8fDE3NTcxMDQ1MDl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      heroImage: herolastmile,
       
       // Project context
       context: "Inmediatum Lastmile needed to transform their manual route planning process that was taking hours daily and causing significant delivery delays across their network of enterprise clients.",
@@ -426,7 +440,7 @@ export function CaseStudy({
       challenge: "How might we design an intelligent platform that reduces route optimization complexity while providing enterprise-grade analytics and real-time tracking capabilities?",
       
       // KPIs and North Star
-      northStar: "Active adherence to care plan",
+      northStar: "Average time to a successful delivery",
       kpis: [
         { category: "Patient Engagement", metrics: ["Daily task completion", "Care plan access", "Educational module usage"] },
         { category: "Provider Efficiency", metrics: ["Data sync speed", "Communication response time", "Workflow automation"] },
@@ -435,66 +449,65 @@ export function CaseStudy({
       ],
 
       // Research insights
-      researchsubtitle: "lastmile We started by listening to those most affected—patients, caregivers, and providers. Our goal was to uncover what truly gets in the way of adherence and engagement.",
+      researchsubtitle: "The project began with stakeholder onboarding and exploratory calls to align on business goals, user pain points, and feature requirements.",
 
       researchtags: [
-        "Lastmile",
+        "Interviews",
         "Shadowing",
-        "Surveys",
-        "Artifact Review",
+        "Competitor Analysis",
       ], 
 
 
       researchFindings: [
           { 
-            number: "72%",
-            subtitle: "of patients forget daily tasks without proper reminders",
+            number: "60%",
+            subtitle: "of small businesses relied on Excel-based logistics, necessitating seamless data import.",
           },
           {
             number: "80%",
-            subtitle: "of providers face delays with outdated patient data",
+            subtitle: "of Operator struggle handling changes (e.g., traffic, breakdowns, cancellations).",
           },
           {
             number: "65%",
-            subtitle: "of caregivers struggle with complex care plan navigation",
+            subtitle: "Operators had communication gaps with Drivers & clients",
           },
       ],
 
       keyInsights: [
-        { 
-          title: "72%",
-          description: "of patients forget daily tasks without proper reminders",
-        },
-        {
-          title: "80%",
-          description: "of providers face delays with outdated patient data",
-        },
-        {
-          title: "65%",
-          description: "of caregivers struggle with complex care plan navigation",
-        },
+          { 
+            title: "60%",
+            description: "of small businesses relied on Excel-based logistics, necessitating seamless data import.",
+          },
+          {
+            title: "80%",
+            description: "of Operators struggle handling changes (e.g., traffic, breakdowns, cancellations).",
+          },
+          {
+            title: "65%",
+            description: "of Operators had communication gaps with Drivers & clients",
+          },
       ],
         
       // Pain points
 
         painPoints: [
           {
-            title: "Low adherence",
+            title: "Manual data entry",
             description:
-              "Patients frequently missed medications and daily tasks due to poor reminders.",
-            icon: Activity,
+              "Manual data entry leads to frequent errors and customer complaints",
+            icon: NotebookPen,
           },
           {
-            title: "Overwhelmed caregivers",
+            title: "Communication Gaps",
             description:
-              "Family members lacked clear tools to monitor and support care activities.",
-            icon: Activity,
+              "Communication with drivers relies on phone calls and text messages",
+            icon: MessageSquareX,
           },
           {
-            title: "Fragmented data",
+            title: "Route Optimization",
             description:
-              "Providers struggled with incomplete and dispersed health records.",
-            icon: Activity,
+              "Difficulty balancing delivery windows, driver capacity, and cost optimization",
+            icon: Target,
           },
         ],
 
@@ -503,42 +516,45 @@ export function CaseStudy({
         {
           phase: "Research",
           insight: "Delivery managers were spending 3+ hours daily on manual route optimization",
-          image: "https://images.unsplash.com/photo-1710799885122-428e63eff691?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx1c2VyJTIwcGVyc29uYSUyMGRlc2lnbnxlbnwxfHx8fDE3NTcwODAxODd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+          image: interviewslastmile,
         },
         {
-          phase: "Define",
-          insight: "89% of delivery delays were caused by inefficient routing and lack of real-time visibility",
-          image: "https://images.unsplash.com/photo-1564424555153-04228f0aa7ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjB3aXJlZnJhbWVzfGVufDF8fHx8MTc1NzAzODg1OXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+          phase: "Competitive research",
+          insight: "Learning form the competition",
+          image: competitionlastmile,
         },
         {
-          phase: "Design",
-          insight: "AI-powered optimization reduced planning time from hours to minutes",
-          image: "https://images.unsplash.com/photo-1690369519543-c81a2121f740?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhcHAlMjB1aSUyMGRlc2lnbiUyMHN5c3RlbXxlbnwxfHx8fDE3NTcxMDQ1MjB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+          phase: "Prioritizing",
+          insight: "Eisenhower Matrix: prioritizing route planner & Real-Time Tracking & Dynamic",
+          image: ematrixlastmile,
+        },
+        {
+          phase: "Wirefriming",
+          insight: "Using research findings, I created low-fidelity wireframes to map critical user flows (e.g., route planning, proof-of-delivery).",
+          image: wireframeslastmile,
         }
       ],
 
       // User journey & empathy map
+        
+        UnderstandingUser: "Building empathy and uncovering insights to guide our design decisions.",
+
         userjourney: [
           {
-            title: "Empathy map María",
-            description: "Empathy maps uncovering María’s needs, emotions, and behaviors",
-            image: empathychs1
+            title: "Sarah Martinez",
+            description: "Spends 2+ hours daily creating routes manually using Excel and maps",
+            image: personalastmile
           },
           {
-            title: "Empathy Map Laura",
-            description: "Empathy maps uncovering Laura’s needs, emotions, and behaviors",
-            image: empathychs2
+            title: "Defining the project’s foundation: goals, scope, and key elements",
+            description: "Laying the groundwork for Lastmile with clear goals, audience, and priorities.",
+            image: onboardinglastmile
           },
           {
-            title: "User Journey Transformation",
-            description: "Following María's daily routine, we mapped her experience before and after CHS implementation, identifying key friction points and improvement opportunities.",
-            image: userjourneychs
+            title: "Insides & Findings",
+            description: "Synthesizing our findings through an affinity diagram to uncover key user needs",
+            image: insideslastmile
           },
-          {
-            title: "Designing Clarity",
-            description: "An intuitive structure that organizes content and simplifies navigation",
-            image: sitemapchs
-          }
         ],
 
       // Key features
@@ -547,18 +563,18 @@ export function CaseStudy({
 
       keyFeatures: [
         {
-          title: "One-click Route Optimization",
+          title: "Automatic Route planner",
           description: "AI-powered algorithm that generates optimal routes in seconds, considering traffic, delivery windows, and vehicle capacity.",
           icon: Target
         },
         {
           title: "Real-time Tracking Dashboard",
-          description: "Live monitoring of all deliveries with predictive alerts for potential delays and automatic rerouting suggestions.",
+          description: "Live monitoring of all deliveries with predictive alerts for potential delays.",
           icon: Eye
         },
         {
-          title: "Mobile Driver Companion",
-          description: "Intuitive mobile app providing turn-by-turn navigation, delivery confirmations, and instant communication with dispatch.",
+          title: "Streamlining Delivery Imports",
+          description: "Enabled users to easily upload their delivery lists from Excel through a predefined, customizable template—making the process faster and more intuitive.",
           icon: Smartphone
         }
       ],
@@ -567,8 +583,8 @@ export function CaseStudy({
 
       testingSetUp: [
         {
-          participants: " lastmile 8 total (seniors, caregivers, providers)",
-          task: "lastmile Onboarding, journal tasks, care plan access, education, communication, emergency response, medication management"
+          participants: " 4 total (Operators)",
+          task: "Select vehicles, Add visits, Import visits and Add route details"
         }
       ],
 
@@ -604,6 +620,24 @@ export function CaseStudy({
         { label: "Customer Satisfaction", value: "4.9★", color: "text-yellow-600" }
       ],
       
+    // Before/After improvements
+      improvements: [
+        {
+          area: "Collaborative route creation board",
+          before: "Route creation was split into three screens with a small, It lacked collaboration features, leading to errors during simultaneous route creation.",
+          after: "A collaborative Kanban-style board with an integrated map. This innovation allowed multiple users to create several routes simultaneously, drastically improving efficiency.",
+          image: guideslastmile
+        },
+        {
+          area: "Dynamic, Full-Screen Map",
+          before: "The map was small and displayed only the created route. Users couldn’t see all routes at once, and fixing an incorrect stop required going back to a previous screen.",
+          after: "The new full-screen map updates in real time with every route change. It displays all routes simultaneously, distinguished by color codes and numbered stops for easier navigation and error correction.",
+          image: maplastmile
+        }
+      ],
+
+
+
       // Final UI screens
       
       finalUI: "A comprehensive platform that transforms complex logistics operations into intuitive, efficient workflows.",
@@ -751,6 +785,9 @@ export function CaseStudy({
         ],
         
         // User journey & empathy map
+
+        UnderstandingUser: "Empathy maps, journeys, and structures that reveal needs, emotions, and behaviors",
+
         userjourney: [
           {
             title: "User Journey 1",
@@ -1067,6 +1104,9 @@ export function CaseStudy({
         ],
 
         // User journey & empathy map
+
+        UnderstandingUser: "Empathy maps, journeys, and structures that reveal needs, emotions, and behaviors",
+
         userjourney: [
           {
             title: "Empathy map María",
@@ -1647,7 +1687,7 @@ export function CaseStudy({
 
         )}
 
-      {/* User Journey (CHS specific) */}
+      {/* User Journey */}
       {(projectId === 1|| projectId === 2|| projectId === 3|| projectId === 4) && 
         <section className="py-32 px-6 bg-gray-50">
           <div className="max-w-7xl mx-auto">
@@ -1662,7 +1702,7 @@ export function CaseStudy({
                 Understanding the User
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto font-light leading-relaxed">
-                Empathy maps, journeys, and structures that reveal needs, emotions, and behaviors
+                {caseStudyData.UnderstandingUser}
               </p>
             </motion.div>
           <motion.div
@@ -1923,7 +1963,7 @@ export function CaseStudy({
       </section>
 
       {/* Before/After Revisions */}
-      {projectId === 1 && caseStudyData.improvements && (
+      {(projectId === 1|| projectId === 2|| projectId === 3|| projectId === 4) && caseStudyData.improvements && (
         <section className="py-32 px-6 bg-[rgba(255,255,255,1)]">
           <div className="max-w-7xl mx-auto">
             <motion.div
