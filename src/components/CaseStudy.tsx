@@ -332,6 +332,8 @@ export function CaseStudy({
         ],
         
         // Final impact metrics
+        ImpactResults: "CHS Care Management delivered significant improvements in patient outcomes, provider efficiency, and overall care coordination.",
+
         impactMetrics: [
           { label: "Daily Task Adherence", value: "+35%", color: "text-green-600" },
           { label: "Care Plan Access", value: "90%", color: "text-blue-600" },
@@ -342,6 +344,10 @@ export function CaseStudy({
           { label: "NPS Improvement", value: "+20", color: "text-blue-600" }
         ],
         
+        //Reflection
+        
+        Reflection: "This project reinforced the critical importance of accessibility in healthcare design. Working with vulnerable populations taught me that inclusive design isn't just good practice—it's essential for ensuring equitable access to care. The success came from deeply understanding user needs and prioritizing simplicity without sacrificing functionality.",
+
         // Final UI screens
 
         finalUI: "A comprehensive care management platform that empowers patients, caregivers, and providers with accessible tools and real-time coordination.",
@@ -398,6 +404,7 @@ export function CaseStudy({
             image: profile2chs
           },                                                                               
         ]
+
       };
     }
     
@@ -587,6 +594,9 @@ export function CaseStudy({
       ],
       
       // Final impact metrics
+
+      ImpactResults: "Measurable improvements that transformed logistics operations and delivered significant business value.",
+
       impactMetrics: [
         { label: "Delivery Time Reduction", value: "67%", color: "text-primary" },
         { label: "Cost Savings", value: "$2.4M", color: "text-green-600" },
@@ -619,7 +629,12 @@ export function CaseStudy({
           description: "Comprehensive performance analytics with actionable insights and predictive recommendations",
           image: "https://images.unsplash.com/photo-1690369519543-c81a2121f740?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhcHAlMjB1aSUyMGRlc2lnbiUyMHN5c3RlbXxlbnwxfHx8fDE3NTcxMDQ1MjB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
         }
-      ]
+      ],
+
+      //Reflection
+      
+      Reflection: "This project reinforced the importance of deep user research in B2B environments. Complex enterprise workflows require careful balance between powerful functionality and intuitive design. The success came from focusing on the user's primary goal: getting their job done efficiently."
+
       };
     }
     
@@ -804,7 +819,7 @@ export function CaseStudy({
 
         testingSetUp: [
           {
-            participants: "Juntos 8 total (seniors, caregivers, providers)",
+            participants: "8 total (seniors, caregivers, providers)",
             task: "juntos Onboarding, journal tasks, care plan access, education, communication, emergency response, medication management"
           }
         ],
@@ -853,6 +868,9 @@ export function CaseStudy({
         ],
         
         // Final impact metrics
+
+        ImpactResults: "CHS Care Management delivered significant improvements in patient outcomes, provider efficiency, and overall care coordination.",
+
         impactMetrics: [
           { label: "Daily Task Adherence", value: "+35%", color: "text-green-600" },
           { label: "Care Plan Access", value: "90%", color: "text-blue-600" },
@@ -888,7 +906,10 @@ export function CaseStudy({
             description: "Real-time patient monitoring dashboard with communication tools and care coordination features",
             image: "https://images.unsplash.com/photo-1623915695133-d624f7759fd0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx1c2FiaWxpdHklMjB0ZXN0aW5nJTIwaGVhbHRoY2FyZSUyMGFwcHxlbnwxfHx8fDE3NTcxNzI4MTF8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
           }
-        ]
+        ],
+
+        //Reflection
+        Reflection: " Juntos This project reinforced the importance of deep user research in B2B environments. Complex enterprise workflows require careful balance between powerful functionality and intuitive design. The success came from focusing on the user's primary goal: getting their job done efficiently."
       };
     }
 
@@ -1181,6 +1202,9 @@ export function CaseStudy({
         ],
 
         // Final impact metrics
+
+        ImpactResults: "CHS Care Management delivered significant improvements in patient outcomes, provider efficiency, and overall care coordination.",
+
         impactMetrics: [
           {
             label: "Faster Record Updates",
@@ -1238,291 +1262,13 @@ export function CaseStudy({
               "https://images.unsplash.com/photo-1631563020941-c0c6bc534b8e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwYXRpZW50JTIwbWVkaWNhbCUyMGhpc3RvcnklMjBkaWdpdGFsfGVufDF8fHx8MTc1Nzk3NzI5MHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
           },
         ],
+
+        //Reflection
+        Reflection: "REd This project reinforced the importance of deep user research in B2B environments. Complex enterprise workflows require careful balance between powerful functionality and intuitive design. The success came from focusing on the user's primary goal: getting their job done efficiently."
+
       };
     } 
-
-    // Red de salud
-    if (id === 4) {
-      // Red de salud case study
-      return {
-        title: "Red de Salud",
-        subtitle: "Redefining Patient Management in Telehealth",
-        tags: [
-          "Telehealth",
-          "Dashboard",
-          "SaaS",
-          "Healthcare Technology",
-        ],
-        client: "Red de Salud",
-        year: "2022",
-        role: "UX Designer",
-        duration: "1 year",
-        tools: ["Figma", "FigJam", "Prototyping"],
-        heroImage:
-          "https://images.unsplash.com/photo-1653212883766-132e1977a4b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWxlaGVhbHRoJTIwdmlkZW8lMjBjYWxsJTIwbWVkaWNhbCUyMGRhc2hib2FyZHxlbnwxfHx8fDE3NTc5NzcyNzd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-
-        // Project context
-        context:
-          "Red de Salud needed a comprehensive SaaS platform to centralize patient care, streamline communication between healthcare professionals, and deliver personalized patient education in a fragmented healthcare system.",
-
-        challenge:
-          "How might we design a telehealth platform that addresses fragmented patient management, siloed medical records, and the lack of effective patient communication and education tools?",
-
-        // KPIs and North Star
-        northStar:
-          "Percentage of active patients with a continuously updated digital health record shared across specialists",
-        kpis: [
-          {
-            category: "Patient Management",
-            metrics: [
-              "Shared record updates",
-              "Cross-specialty collaboration",
-              "Record accessibility",
-            ],
-          },
-          {
-            category: "Communication",
-            metrics: [
-              "Patient engagement",
-              "Follow-up completion",
-              "Response time",
-            ],
-          },
-          {
-            category: "Education",
-            metrics: [
-              "Microlearning completion",
-              "Knowledge retention",
-              "Behavior change",
-            ],
-          },
-          {
-            category: "Efficiency",
-            metrics: [
-              "Workflow optimization",
-              "Time savings",
-              "Error reduction",
-            ],
-          },
-        ],
-
-        // Research insights
-        researchFindings: [
-          {
-            stat: "85%",
-            insight:
-              "of healthcare professionals struggle with fragmented patient records",
-          },
-          {
-            stat: "70%",
-            insight:
-              "of patients miss follow-up appointments due to poor communication",
-          },
-          {
-            stat: "60%",
-            insight:
-              "of doctors report inefficient patient education tools",
-          },
-          {
-            stat: "90%",
-            insight:
-              "of specialists need better cross-team collaboration features",
-          },
-        ],
-
-        // User personas
-        personas: [
-          {
-            name: "Dr. Ana García",
-            role: "General Physician (42)",
-            pain: "Needs efficient telehealth tools and seamless patient record access across specialties",
-            image:
-              "https://images.unsplash.com/photo-1659353888906-adb3e041693?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkb2N0b3IlMjBtZWRpY2FsJTIwcGVyc29uYXMlMjBoZWFsdGhjYXJlJTIwcHJvZmVzc2lvbmFsc3xlbnwxfHx8fDE3NTc5NzcyOTR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-          },
-          {
-            name: "Dr. Carlos Méndez",
-            role: "Nephrologist (38)",
-            pain: "Requires specialized patient monitoring tools and efficient communication with other specialists",
-            image:
-              "https://images.unsplash.com/photo-1659353888906-adb3e041693?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkb2N0b3IlMjBtZWRpY2FsJTIwcGVyc29uYXMlMjBoZWFsdGhjYXJlJTIwcHJvZmVzc2lvbmFsc3xlbnwxfHx8fDE3NTc5NzcyOTR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-          },
-          {
-            name: "Lic. María Rodríguez",
-            role: "Nutritionist (35)",
-            pain: "Needs integrated nutrition tracking tools and effective patient education resources",
-            image:
-              "https://images.unsplash.com/photo-1659353888906-adb3e041693?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkb2N0b3IlMjBtZWRpY2FsJTIwcGVyc29uYXMlMjBoZWFsdGhjYXJlJTIwcHJvZmVzc2lvbmFsc3xlbnwxfHx8fDE3NTc5NzcyOTR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-          },
-        ],
-
-        // Design process insights
-        processInsights: [
-          {
-            phase: "Research & Discovery",
-            insight:
-              "Conducted interviews with 9 healthcare professionals (3 GPs, 3 nephrologists, 3 nutritionists) and competitive analysis to understand workflow gaps",
-            image:
-              "https://images.unsplash.com/photo-1691934286085-c88039d93dae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx1c2VyJTIwcmVzZWFyY2glMjBoZWFsdGhjYXJlJTIwaW50ZXJ2aWV3c3xlbnwxfHx8fDE3NTc5NzczMDB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-          },
-          {
-            phase: "User Journey Mapping",
-            insight:
-              "Mapped three distinct user journeys from login to actionable patient care for each specialty, identifying key touchpoints and opportunities",
-            image:
-              "https://images.unsplash.com/photo-1618393678132-180ea320c9c4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx1c2VyJTIwam91cm5leSUyMG1hcHBpbmclMjBoZWFsdGhjYXJlfGVufDF8fHx8MTc1NzE3MjgwNXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-          },
-          {
-            phase: "Iterative Design & Prototyping",
-            insight:
-              "Developed prototypes guided by real clinical needs, iterating based on continuous feedback from healthcare professionals",
-            image:
-              "https://images.unsplash.com/photo-1627757818592-ce2649563a6c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjB3aXJlZnJhbWVzJTIwZGVzaWduJTIwcHJvY2Vzc3xlbnwxfHx8fDE3NTcxNzI4MDh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-          },
-        ],
-
-        // Key features
-        keyFeatures: [
-          {
-            title: "Shared Digital Record",
-            description:
-              "Centralized patient records accessible across all healthcare specialties with real-time updates and comprehensive medical history.",
-            icon: Shield,
-          },
-          {
-            title: "Automated Patient Engagement",
-            description:
-              "Smart reminder system and automated follow-up tools that increase patient adherence and engagement with care plans.",
-            icon: Activity,
-          },
-          {
-            title: "Microlearning for Patients",
-            description:
-              "Personalized educational content delivered in digestible formats to improve patient understanding and health outcomes.",
-            icon: BookOpen,
-          },
-        ],
-
-        // Usability testing results
-
-        testingSetUp: [
-          {
-            participants: "Red 8 total (seniors, caregivers, providers)",
-            task: "Onboarding, journal tasks, care plan access, education, communication, emergency response, medication management"
-          }
-        ],
-
-        testingResults: [
-          {
-            metric: "Completion Rate",
-            before: "58%",
-            after: "92%",
-            improvement: "+59%",
-          },
-          {
-            metric: "Error Rate",
-            before: "18%",
-            after: "8%",
-            improvement: "-56%",
-          },
-          {
-            metric: "User Satisfaction",
-            before: "3.2/5",
-            after: "4.6/5",
-            improvement: "+44%",
-          },
-        ],
-
-        // Before/After improvements
-        improvements: [
-          {
-            area: "Video Call Interface",
-            before:
-              "Basic video calling without integrated patient data access during consultations",
-            after:
-              "Video call screen with real-time record updates, allowing doctors to modify patient information during the consultation",
-            image:
-              "https://images.unsplash.com/photo-1653212883766-132e1977a4b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWxlaGVhbHRoJTIwdmlkZW8lMjBjYWxsJTIwbWVkaWNhbCUyMGRhc2hib2FyZHxlbnwxfHx8fDE3NTc5NzcyNzd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-          },
-          {
-            area: "Dashboard & Waiting Room",
-            before:
-              "Fragmented dashboard with limited patient visibility and scheduling conflicts",
-            after:
-              "Unified dashboard with integrated waiting room, patient queue management, and comprehensive overview",
-            image:
-              "https://images.unsplash.com/photo-1747224317356-6dd1a4a078fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoZWFsdGhjYXJlJTIwZGFzaGJvYXJkJTIwaW50ZXJmYWNlfGVufDF8fHx8MTc1NzkyNzY2NHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-          },
-          {
-            area: "Nutrition Module",
-            before:
-              "Manual nutrition tracking without integrated calculation tools",
-            after:
-              "Advanced nutrition module with built-in kcal calculator, meal planning, and progress tracking",
-            image:
-              "https://images.unsplash.com/photo-1641439927222-6138ce56f90d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZWRpY2FsJTIwbnV0cml0aW9uJTIwY2FsY3VsYXRvciUyMGFwcHxlbnwxfHx8fDE3NTc5NzcyODZ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-          },
-        ],
-
-        // Final impact metrics
-        impactMetrics: [
-          {
-            label: "Faster Record Updates",
-            value: "45%",
-            color: "text-blue-600",
-          },
-          {
-            label: "More Follow-ups",
-            value: "60%",
-            color: "text-green-600",
-          },
-          {
-            label: "Microlearning Engagement",
-            value: "3x",
-            color: "text-purple-600",
-          },
-          {
-            label: "Collaboration Improvement",
-            value: "80%",
-            color: "text-orange-600",
-          },
-        ],
-
-        // Final UI screens
-
-        finalUI: "A comprehensive platform that transforms complex logistics operations into intuitive, efficient workflows.",
-
-        finalScreens: [
-          {
-            title: "Video Call with Real-time Updates",
-            description:
-              "Integrated video consultation interface allowing doctors to update patient records in real-time during appointments",
-            image:
-              "https://images.unsplash.com/photo-1653212883766-132e1977a4b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWxlaGVhbHRoJTIwdmlkZW8lMjBjYWxsJTIwbWVkaWNhbCUyMGRhc2hib2FyZHxlbnwxfHx8fDE3NTc5NzcyNzd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-          },
-          {
-            title: "Dashboard with Waiting Room",
-            description:
-              "Comprehensive dashboard providing overview of patient queue, appointments, and key metrics with integrated waiting room management",
-            image:
-              "https://images.unsplash.com/photo-1747224317356-6dd1a4a078fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoZWFsdGhjYXJlJTIwZGFzaGJvYXJkJTIwaW50ZXJmYWNlfGVufDF8fHx8MTc1NzkyNzY2NHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-          },
-          {
-            title: "Nutrition Module & Calculator",
-            description:
-              "Advanced nutrition tracking interface with built-in kcal calculator, meal planning tools, and patient progress monitoring",
-            image:
-              "https://images.unsplash.com/photo-1641439927222-6138ce56f90d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZWRpY2FsJTIwbnV0cml0aW9uJTIwY2FsY3VsYXRvciUyMGFwcHxlbnwxfHx8fDE3NTc5NzcyODZ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-          },
-          {
-            title: "Patient History & Records",
-            description:
-              "Comprehensive patient history interface with 10+ integrated modules covering all aspects of patient care and medical history",
-            image:
-              "https://images.unsplash.com/photo-1631563020941-c0c6bc534b8e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwYXRpZW50JTIwbWVkaWNhbCUyMGhpc3RvcnklMjBkaWdpdGFsfGVufDF8fHx8MTc1Nzk3NzI5MHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-          },
-        ],
-      };
-    } 
+ 
   };
 
   const caseStudyData = getCaseStudyData(projectId);
@@ -2354,9 +2100,7 @@ export function CaseStudy({
               Impact & Results
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto font-light leading-relaxed">
-              {projectId === 1
-                ? "CHS Care Management delivered significant improvements in patient outcomes, provider efficiency, and overall care coordination."
-                : "Measurable improvements that transformed logistics operations and delivered significant business value."}
+              {caseStudyData.ImpactResults}
             </p>
           </motion.div>
 
@@ -2402,9 +2146,7 @@ export function CaseStudy({
               Reflection
             </h2>
             <p className="text-xl text-gray-300 leading-relaxed font-light mb-12">
-              {projectId === 1
-                ? "This project reinforced the critical importance of accessibility in healthcare design. Working with vulnerable populations taught me that inclusive design isn't just good practice—it's essential for ensuring equitable access to care. The success came from deeply understanding user needs and prioritizing simplicity without sacrificing functionality."
-                : "This project reinforced the importance of deep user research in B2B environments. Complex enterprise workflows require careful balance between powerful functionality and intuitive design. The success came from focusing on the user's primary goal: getting their job done efficiently."}
+              {caseStudyData.Reflection}
             </p>
 
             <button
