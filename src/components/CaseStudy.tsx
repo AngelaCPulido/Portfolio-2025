@@ -343,6 +343,9 @@ export function CaseStudy({
         ],
         
         // Final UI screens
+
+        finalUI: "A comprehensive care management platform that empowers patients, caregivers, and providers with accessible tools and real-time coordination.",
+                
         finalScreens: [
           {
             title: "Onboarding",
@@ -592,6 +595,9 @@ export function CaseStudy({
       ],
       
       // Final UI screens
+      
+      finalUI: "A comprehensive platform that transforms complex logistics operations into intuitive, efficient workflows.",
+
       finalScreens: [
         {
           title: "Dashboard Overview",
@@ -858,6 +864,9 @@ export function CaseStudy({
         ],
         
         // Final UI screens
+        
+        finalUI: "A comprehensive platform that transforms complex logistics operations into intuitive, efficient workflows.",
+
         finalScreens: [
           {
             title: "Daily Journal & Tasks",
@@ -1196,6 +1205,9 @@ export function CaseStudy({
         ],
 
         // Final UI screens
+  
+        finalUI: "A comprehensive platform that transforms complex logistics operations into intuitive, efficient workflows.",
+
         finalScreens: [
           {
             title: "Video Call with Real-time Updates",
@@ -1476,6 +1488,9 @@ export function CaseStudy({
         ],
 
         // Final UI screens
+
+        finalUI: "A comprehensive platform that transforms complex logistics operations into intuitive, efficient workflows.",
+
         finalScreens: [
           {
             title: "Video Call with Real-time Updates",
@@ -2161,7 +2176,7 @@ export function CaseStudy({
         </div>
       </section>
 
-      {/* Before/After Revisions (CHS specific) */}
+      {/* Before/After Revisions */}
       {projectId === 1 && caseStudyData.improvements && (
         <section className="py-32 px-6 bg-[rgba(255,255,255,1)]">
           <div className="max-w-7xl mx-auto">
@@ -2278,9 +2293,7 @@ export function CaseStudy({
               Final Design
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto font-light leading-relaxed">
-              {projectId === 1
-                ? "A comprehensive care management platform that empowers patients, caregivers, and providers with accessible tools and real-time coordination."
-                : "A comprehensive platform that transforms complex logistics operations into intuitive, efficient workflows."}
+              {caseStudyData.finalUI}
             </p>
           </motion.div>
 
