@@ -177,18 +177,18 @@ export function CaseStudy({
         // Discovery Outcomes
         discoveryOutcomes: [
           {
-            title: "Defined top 3 hypotheses for prototyping",
-            description: "Focused on adherence, caregiver engagement, and provider coordination.",
-            icon: Target,
+            title: "Provider Efficiency",
+            description: "Real-time data syncing improves provider efficiency and reduces manual data entry.",
+            icon: Activity,
           },
           {
-            title: "Identified critical pain points",
-            description: "Data fragmentation, limited reminders, and poor caregiver visibility.",
-            icon: Eye,
+            title: "Patient Adherence",
+            description: "Personalized reminders increase adherence by 25% through timely, relevant notifications.",
+            icon: Heart,
           },
           {
-            title: "Mapped research insights",
-            description: "Clear link between usability gaps and patient adherence.",
+            title: "Educational Content",
+            description: "Simplified educational content improves comprehension and engagement for all age groups.",
             icon: BookOpen,
           },
         ],
@@ -259,6 +259,8 @@ export function CaseStudy({
         ],
 
         // Key features
+        keyfeaturestitle: "Intelligent solutions designed to bridge communication gaps and ensure accessible care coordination.",
+
         keyFeatures: [
           {
             title: "Smart Daily Reminders",
@@ -278,6 +280,14 @@ export function CaseStudy({
         ],
         
         // Usability testing results
+        
+        testingSetUp: [
+          {
+            participants: "8 total (seniors, caregivers, providers)",
+            task: "Onboarding, journal tasks, care plan access, education, communication, emergency response, medication management"
+          }
+        ],
+
         testingResults: [
           {
             metric: "Task Completion Rate",
@@ -522,6 +532,9 @@ export function CaseStudy({
         ],
 
       // Key features
+      
+      keyfeaturestitle: "Intelligent solutions designed to transform logistics operations from reactive to proactive.",
+
       keyFeatures: [
         {
           title: "One-click Route Optimization",
@@ -541,6 +554,14 @@ export function CaseStudy({
       ],
       
       // Usability testing results
+
+      testingSetUp: [
+        {
+          participants: " lastmile 8 total (seniors, caregivers, providers)",
+          task: "lastmile Onboarding, journal tasks, care plan access, education, communication, emergency response, medication management"
+        }
+      ],
+
       testingResults: [
         {
           metric: "Task Completion Rate",
@@ -735,7 +756,7 @@ export function CaseStudy({
         // Design process insights
         processInsights: [
           {
-            phase: "Research & Discovery",
+            phase: "Juntos Research & Discovery",
             insight: "Interviewed 24 participants across patient, caregiver, and provider groups to understand pain points",
             image: "https://images.unsplash.com/photo-1691934286085-c88039d93dae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx1c2VyJTIwcmVzZWFyY2glMjBwZXJzb25hcyUyMGhlYWx0aGNhcmV8ZW58MXx8fHwxNzU3MTcyODAyfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
           },
@@ -752,9 +773,12 @@ export function CaseStudy({
         ],
 
         // Key features
+        
+        keyfeaturestitle: "Juntos Intelligent solutions designed to transform logistics operations from reactive to proactive.",
+
         keyFeatures: [
           {
-            title: "Smart Daily Reminders",
+            title: "Juntos Smart Daily Reminders",
             description: "Intelligent task reminders with wearable device sync, ensuring patients never miss critical care activities.",
             icon: Activity
           },
@@ -771,6 +795,14 @@ export function CaseStudy({
         ],
         
         // Usability testing results
+
+        testingSetUp: [
+          {
+            participants: "Juntos 8 total (seniors, caregivers, providers)",
+            task: "juntos Onboarding, journal tasks, care plan access, education, communication, emergency response, medication management"
+          }
+        ],
+
         testingResults: [
           {
             metric: "Task Completion Rate",
@@ -1054,6 +1086,9 @@ export function CaseStudy({
         ],
 
         // Key features
+        
+        keyfeaturestitle: "Red Intelligent solutions designed to transform logistics operations from reactive to proactive.",
+
         keyFeatures: [
           {
             title: "Shared Digital Record",
@@ -1076,6 +1111,14 @@ export function CaseStudy({
         ],
 
         // Usability testing results
+
+        testingSetUp: [
+          {
+            participants: "Red 8 total (seniors, caregivers, providers)",
+            task: "Red Onboarding, journal tasks, care plan access, education, communication, emergency response, medication management"
+          }
+        ],
+
         testingResults: [
           {
             metric: "Completion Rate",
@@ -1348,6 +1391,14 @@ export function CaseStudy({
         ],
 
         // Usability testing results
+
+        testingSetUp: [
+          {
+            participants: "Red 8 total (seniors, caregivers, providers)",
+            task: "Onboarding, journal tasks, care plan access, education, communication, emergency response, medication management"
+          }
+        ],
+
         testingResults: [
           {
             metric: "Completion Rate",
@@ -1978,9 +2029,7 @@ export function CaseStudy({
               Key Features
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto font-light leading-relaxed">
-              {projectId === 1
-                ? "Intelligent solutions designed to bridge communication gaps and ensure accessible care coordination."
-                : "Intelligent solutions designed to transform logistics operations from reactive to proactive."}
+              {caseStudyData.keyfeaturestitle}
             </p>
           </motion.div>
 
@@ -2035,8 +2084,9 @@ export function CaseStudy({
             </p>
           </motion.div>
 
-          {projectId === 1 && (
+          {caseStudyData.testingSetUp.map((setup, index) => (
             <motion.div
+              key={index}
               className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 mb-12"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -2047,16 +2097,15 @@ export function CaseStudy({
                 Testing Setup
               </h3>
               <p className="text-gray-600 mb-4">
-                <strong>Participants:</strong> 8 total (seniors,
-                caregivers, providers)
+                <strong>Participants:</strong> 
+                  {setup.participants}
               </p>
               <p className="text-gray-600">
-                <strong>Tasks tested:</strong> Onboarding,
-                journal tasks, care plan access, education,
-                communication, emergency response, medication
-                management
+                <strong>Tasks tested:</strong> 
+                {setup.task}
               </p>
             </motion.div>
+            ),
           )}
 
           <div className="space-y-12">
