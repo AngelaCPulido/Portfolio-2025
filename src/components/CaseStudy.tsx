@@ -1039,7 +1039,7 @@ export function CaseStudy({
           "Artifact Review",
         ],
 
-        keyInsights: [
+        researchFindings: [
             { 
               title: "72%",
               description: "of patients forget daily tasks without proper reminders",
