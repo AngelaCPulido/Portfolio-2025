@@ -50,6 +50,9 @@ import juntosuserjourneyImage from "figma:asset/User-journey-juntos.png";
 import mariajuntos from "figma:asset/maria-juntos.png";
 import carlosjuntos from "figma:asset/carlos-juntos.png";
 import anajuntos from "figma:asset/Ana-juntos.png";
+import empathyjuntos from "figma:asset/empathymap-juntos.png";
+import ematrixjuntos from "figma:asset/Eisenhowermatrix-juntos.png";
+
 
 
 import {
@@ -797,24 +800,19 @@ export function CaseStudy({
 
         userjourney: [
           {
-            title: "User Journey 1",
-            description: "Simplified interface for tracking daily activities with visual progress indicators and reminders",
+            title: "User Journey – María",
+            description: "Tracing the step-by-step experience of a restaurant owner managing her digital menu.",
             image: juntosuserjourneyImage
           },
           {
-            title: "Care Plan Overview",
-            description: "Accessible care plan display with clear progress tracking, next steps, and provider contact",
-            image: "https://images.unsplash.com/photo-1747224317356-6dd1a4a078fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoZWFsdGhjYXJlJTIwZGFzaGJvYXJkJTIwaW50ZXJmYWNlJTIwbWVkaWNhbHxlbnwxfHx8fDE3NTcxNzI3OTZ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+            title: "Empathy Map – María",
+            description: "Understanding María’s thoughts, feelings, actions, and needs as she navigates menu creation.",
+            image: empathyjuntos
           },
           {
-            title: "Education Library",
-            description: "Video-first educational content with search functionality, categories, and accessibility features",
-            image: "https://images.unsplash.com/photo-1627757818592-ce2649563a6c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjB3aXJlZnJhbWVzJTIwZGVzaWduJTIwcHJvY2Vzc3xlbnwxfHx8fDE3NTcxNzI4MDh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-          },
-          {
-            title: "Provider Dashboard",
-            description: "Real-time patient monitoring dashboard with communication tools and care coordination features",
-            image: "https://images.unsplash.com/photo-1623915695133-d624f7759fd0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx1c2FiaWxpdHklMjB0ZXN0aW5nJTIwaGVhbHRoY2FyZSUyMGFwcHxlbnwxfHx8fDE3NTcxNzI4MTF8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+            title: "Eisenhower Matrix",
+            description: "Prioritizing features based on urgency and importance to optimize the product roadmap.",
+            image: ematrixjuntos
           }
         ],
 
