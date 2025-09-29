@@ -55,6 +55,15 @@ import ematrixjuntos from "figma:asset/Eisenhowermatrix-juntos.png";
 import wireframesjuntos from "figma:asset/wireframes-juntos.png";
 import designjuntos from "figma:asset/design-system-juntos.png";
 import usabilityjuntos from "figma:asset/usability-test-juntos.png";
+import modifiersjuntos from "figma:asset/juntos-modifiers.png";
+import prefillingjuntos from "figma:asset/juntos-pre-filling.png";
+import productojuntos from "figma:asset/juntos-producto.png";
+import adicionesjuntos from "figma:asset/juntos-adiciones.png";
+import prototypejuntos from "figma:asset/juntos-prototipo.gif";
+import cartajuntos from "figma:asset/juntos-carta.png";
+import sucursaljuntos from "figma:asset/juntos-sucursal.png";
+import toppinsjuntos from "figma:asset/juntos-adiciones-toppins.png";
+import ordenesjuntos from "figma:asset/juntos-ordenes.png";
 
 import {
   Carousel,
@@ -938,22 +947,28 @@ export function CaseStudy({
         // Before/After improvements
         improvements: [
           {
-            area: "Caregiver Onboarding",
-            before: "Caregivers felt the chatbot-driven onboarding was too long and repetitive",
-            after: "A form that it's shorter and more direct",
-            image: caregiverOnboardingImage
+            area: "Reorder fields",
+            before: "Skipped optional fields reduce product richness.",
+            after: "Reorder fields (put details and photos higher)",
+            image: productojuntos,
           },
           {
-            area: "My Journal",
-            before: "No dedicated space for patients to track their daily thoughts and progress",
-            after: "Integrated journal feature with guided prompts and mood tracking",
-            image: "https://images.unsplash.com/photo-1643747238990-b0bdbec5c263?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBqb3VybmFsJTIwZGlhcnklMjB3cml0aW5nfGVufDF8fHx8MTc1NzU0MjU5NHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+            area: "Reduce cognitive load",
+            before: "Task flow slightly longer than target.",
+            after: "Reduce cognitive load by pre-filling defaults (e.g., price in MXN, category suggestion based on previous entries).",
+            image: prefillingjuntos,
           },
           {
-            area: "Care Plan",
-            before: "Difficult to find and understand care plan details",
-            after: "Highlighted care plan section with visual progress tracking",
-            image: "https://images.unsplash.com/photo-1722235623200-59966a71af50?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoZWFsdGhjYXJlJTIwY2FyZSUyMHBsYW4lMjBtZWRpY2FsJTIwZGFzaGJvYXJkfGVufDF8fHx8MTc1NzUyNjIxMXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+            area: "Paid Additions",
+            before: "Emotional friction with modifiers",
+            after: "Use familiar terms (“Paid Additions”) instead of “Modifiers” to reduce confusion.",
+            image: adicionesjuntos,
+          },
+          {
+            area: "Modifiers vs Additions",
+            before: "Confusion between Categories and Modifiers.",
+            after: "Rename or visually differentiate these tabs. Add microcopy or onboarding tips explaining their roles.",
+            image: modifiersjuntos,
           }
         ],
         
@@ -977,25 +992,30 @@ export function CaseStudy({
 
         finalScreens: [
           {
-            title: "Daily Journal & Tasks",
+            title: "Prototype",
             description: "Simplified interface for tracking daily activities with visual progress indicators and reminders",
-            image: "https://images.unsplash.com/photo-1620856902651-ce18d6d31d42?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZWRpY2FsJTIwY2FyZSUyMHNlbmlvcnMlMjBtb2JpbGUlMjBhcHB8ZW58MXx8fHwxNzU3MTcyNzk5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+            image: prototypejuntos,
+          },
+          {
+            title: "Onboarding & Sucursales",
+            description: "Video-first educational content with search functionality, categories, and accessibility features",
+            image: sucursaljuntos,
           },
           {
             title: "Care Plan Overview",
             description: "Accessible care plan display with clear progress tracking, next steps, and provider contact",
-            image: "https://images.unsplash.com/photo-1747224317356-6dd1a4a078fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoZWFsdGhjYXJlJTIwZGFzaGJvYXJkJTIwaW50ZXJmYWNlJTIwbWVkaWNhbHxlbnwxfHx8fDE3NTcxNzI3OTZ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+            image: cartajuntos,
           },
           {
-            title: "Education Library",
-            description: "Video-first educational content with search functionality, categories, and accessibility features",
-            image: "https://images.unsplash.com/photo-1627757818592-ce2649563a6c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjB3aXJlZnJhbWVzJTIwZGVzaWduJTIwcHJvY2Vzc3xlbnwxfHx8fDE3NTcxNzI4MDh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+            title: "Additions",
+            description: "Accessible care plan display with clear progress tracking, next steps, and provider contact",
+            image: toppinsjuntos,
           },
           {
-            title: "Provider Dashboard",
-            description: "Real-time patient monitoring dashboard with communication tools and care coordination features",
-            image: "https://images.unsplash.com/photo-1623915695133-d624f7759fd0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx1c2FiaWxpdHklMjB0ZXN0aW5nJTIwaGVhbHRoY2FyZSUyMGFwcHxlbnwxfHx8fDE3NTcxNzI4MTF8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-          }
+            title: "Orders",
+            description: "Accessible care plan display with clear progress tracking, next steps, and provider contact",
+            image: ordenesjuntos,
+          },
         ],
 
         //Reflection
