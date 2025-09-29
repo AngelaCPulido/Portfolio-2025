@@ -974,16 +974,13 @@ export function CaseStudy({
         
         // Final impact metrics
 
-        ImpactResults: "CHS Care Management delivered significant improvements in patient outcomes, provider efficiency, and overall care coordination.",
+        ImpactResults: "Empowering small restaurants to take back control of their sales.",
 
         impactMetrics: [
-          { label: "Daily Task Adherence", value: "+35%", color: "text-green-600" },
-          { label: "Care Plan Access", value: "90%", color: "text-blue-600" },
-          { label: "Caregiver Time Savings", value: "-25%", color: "text-purple-600" },
-          { label: "Educational Engagement", value: "3x", color: "text-orange-600" },
-          { label: "Communication Speed", value: "+40%", color: "text-cyan-600" },
-          { label: "ER Visit Reduction", value: "-15%", color: "text-green-600" },
-          { label: "NPS Improvement", value: "+20", color: "text-blue-600" }
+          { label: "small restaurants onboarded in first year", value: "+2,500", color: "text-green-600" },
+          { label: "Average savings vs. delivery apps", value: "15–25%", color: "text-blue-600" },
+          { label: "Faster: Reduced setup time: menu creation flow", value: "2x", color: "text-purple-600" },
+          { label: "Increase in successful menu setups", value: "40%", color: "text-orange-600" },
         ],
         
         // Final UI screens
@@ -997,29 +994,29 @@ export function CaseStudy({
             image: prototypejuntos,
           },
           {
-            title: "Onboarding & Sucursales",
-            description: "Video-first educational content with search functionality, categories, and accessibility features",
+            title: "Onboarding & Product Setup",
+            description: "A smooth start: add products or import an entire menu by branch.",
             image: sucursaljuntos,
           },
           {
-            title: "Care Plan Overview",
-            description: "Accessible care plan display with clear progress tracking, next steps, and provider contact",
+            title: "Menu, Categories & Add-ons",
+            description: "Organize dishes into categories and customize with flexible extras.",
             image: cartajuntos,
           },
           {
-            title: "Additions",
-            description: "Accessible care plan display with clear progress tracking, next steps, and provider contact",
+            title: "Add-ons & Groups",
+            description: "Create paid extras or manage existing add-on groups with ease.",
             image: toppinsjuntos,
           },
           {
-            title: "Orders",
-            description: "Accessible care plan display with clear progress tracking, next steps, and provider contact",
+            title: "Orders & Order Details",
+            description: "Track incoming orders and review every detail in real time.",
             image: ordenesjuntos,
           },
         ],
 
         //Reflection
-        Reflection: " Juntos This project reinforced the importance of deep user research in B2B environments. Complex enterprise workflows require careful balance between powerful functionality and intuitive design. The success came from focusing on the user's primary goal: getting their job done efficiently."
+        Reflection: "As a UX designer, this project allowed me to deeply understand the frustrations and fears restaurant owners face when creating and managing their digital menus. Beyond designing a new flow, the real challenge was to give them confidence and control—simplifying steps, reducing the anxiety of making irreversible mistakes, and providing clear tools to organize categories and add-ons. This experience reminded me that design is not just about solving technical tasks, but about supporting people in their everyday routines, enabling them to focus on what truly matters: growing their business and serving their customers better."
       };
     }
 
