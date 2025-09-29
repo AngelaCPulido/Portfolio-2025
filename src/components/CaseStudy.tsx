@@ -70,6 +70,9 @@ import redcover from "figma:asset/cover-red-salud.png";
 import redMaria from "figma:asset/Red-Maria.png";
 import redAndres from "figma:asset/Red-Andres.png";
 import redLaura from "figma:asset/Red-Laura.png";
+import redUserJoureyLaura from "figma:asset/user-journey-laura-red-salud.png";
+import redUserJoureyMiguel from "figma:asset/user-journey-Miguel-red-salud.png";
+import redUserJoureyAndrea from "figma:asset/user-journey-Andrea-red-salud.png";
 
 import {
   Carousel,
@@ -1158,29 +1161,24 @@ export function CaseStudy({
 
         // User journey & empathy map
 
-        UnderstandingUser: "Empathy maps, journeys, and structures that reveal needs, emotions, and behaviors",
+        UnderstandingUser: "Exploring the real-life flows, pain points, and opportunities for each specialist",
 
         userjourney: [
           {
-            title: "Empathy map María",
-            description: "Empathy maps uncovering María’s needs, emotions, and behaviors",
-            image: empathychs1
+            title: "Dr. Laura (Nephrologist)",
+            description: "Managing a Referred Patient",
+            image: redUserJoureyLaura
           },
           {
-            title: "Empathy Map Laura",
-            description: "Empathy maps uncovering Laura’s needs, emotions, and behaviors",
-            image: empathychs2
+            title: "Dr. Miguel (General Practitioner)",
+            description: "Preventing Missed Appointments",
+            image: redUserJoureyMiguel
           },
           {
-            title: "User Journey Transformation",
-            description: "Following María's daily routine, we mapped her experience before and after CHS implementation, identifying key friction points and improvement opportunities.",
-            image: userjourneychs
+            title: "Dr. Andrea (Nutritionist)",
+            description: "Engaging Patient in Lifestyle Change",
+            image: redUserJoureyAndrea
           },
-          {
-            title: "Designing Clarity",
-            description: "An intuitive structure that organizes content and simplifies navigation",
-            image: sitemapchs
-          }
         ],
 
         // Discovery Outcomes
