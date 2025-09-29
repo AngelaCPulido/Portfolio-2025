@@ -2,9 +2,7 @@ import { useState, useEffect } from "react";
 import { motion } from "motion/react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import caregiverOnboardingImage from "figma:asset/38f8c3031aabb83a7a87946b0e002a531a0957b6.png";
-import juntosuserjourneyImage from "figma:asset/User-journey-juntos.png";
 import chscoverImage from "figma:asset/chs.png";
-import juntoscoverImage from "figma:asset/Juntos-cover.png";
 import mariaImage from "figma:asset/maria.png";
 import lauraImage from "figma:asset/laura.png";
 import jamesImage from "figma:asset/james.png";
@@ -29,6 +27,7 @@ import notebookchs from "figma:asset/Notebook.png";
 import onboarding2chs from "figma:asset/Onboarding.png";
 import profile2chs from "figma:asset/Profile.png";
 import recordchs from "figma:asset/Record.png";
+
 //lastmile
 import herolastmile from "figma:asset/lastmile-hero.png";
 import onboardinglastmile from "figma:asset/Onboarding-lastmile.png";
@@ -44,6 +43,14 @@ import routelastmile from "figma:asset/route-lastmile.png";
 import map2lastmile from "figma:asset/map-lastmile.png";
 import savinglastmile from "figma:asset/Saving-lastmile.png";
 import Routeviewlastmile from "figma:asset/Routeview-lastmile.png";
+
+//juntos
+import juntoscoverImage from "figma:asset/juntos-cover-1.png";
+import juntosuserjourneyImage from "figma:asset/User-journey-juntos.png";
+import mariajuntos from "figma:asset/maria-juntos.png";
+import carlosjuntos from "figma:asset/carlos-juntos.png";
+import anajuntos from "figma:asset/Ana-juntos.png";
+
 
 import {
   Carousel,
