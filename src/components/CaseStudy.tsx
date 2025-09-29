@@ -338,6 +338,9 @@ export function CaseStudy({
           }
         ],
 
+        testingResults2: [
+        ],
+
         // Before/After improvements
         improvements: [
           {
@@ -572,6 +575,25 @@ export function CaseStudy({
           },
         ],
 
+        // Discovery Outcomes
+        discoveryOutcomes: [
+          {
+            title: "Provider Efficiency",
+            description: "Real-time data syncing improves provider efficiency and reduces manual data entry.",
+            icon: Activity,
+          },
+          {
+            title: "Patient Adherence",
+            description: "Personalized reminders increase adherence by 25% through timely, relevant notifications.",
+            icon: Heart,
+          },
+          {
+            title: "Educational Content",
+            description: "Simplified educational content improves comprehension and engagement for all age groups.",
+            icon: BookOpen,
+          },
+        ],
+
       // Key features lastmile
       
       keyfeaturestitle: "Intelligent solutions designed to transform logistics operations from reactive to proactive.",
@@ -622,6 +644,9 @@ export function CaseStudy({
           after: "9.3/10",
           improvement: "+53%"
         }
+      ],
+
+      testingResults2: [
       ],
       
       // Final impact metrics
@@ -820,6 +845,25 @@ export function CaseStudy({
           }
         ],
 
+        // Discovery Outcomes
+        discoveryOutcomes: [
+          {
+            title: "Step-by-step flow",
+            description: "A progressive step-by-step flow will reduce overwhelm and errors.",
+            icon: Lightbulb,
+          },
+          {
+            title: "Category management",
+            description: "Dedicated category management will help restaurants mirror their offline menu structure digitally.",
+            icon: Group,
+          },
+          {
+            title: "Visual add-on builder",
+            description: "A visual add-on builder will make it easier to add paid extras quickly, encouraging upsell adoption.",
+            icon: BookOpen,
+          },
+        ],
+
         // Design process insights
         processInsights: [
           {
@@ -865,29 +909,29 @@ export function CaseStudy({
 
         testingSetUp: [
           {
-            participants: "8 total (seniors, caregivers, providers)",
-            task: "juntos Onboarding, journal tasks, care plan access, education, communication, emergency response, medication management"
+            participants: "8 total (restaurant owners)",
+            task: " Adding a New Product, Creating a Combo Meal, Managing Categories, Creating Modifiers, Reviewing Orders"
           }
         ],
 
         testingResults: [
+        ],
+
+        testingResults2: [
           {
-            metric: "Task Completion Rate",
-            before: "45%",
-            after: "78%",
-            improvement: "+73%"
+            metric: "Overall Usability",
+            before: "7/8 participants successfully created a new product on their first try.",
+            after: "Average task completion time for adding a product: 2.5 minutes (target: 2 min).",
           },
           {
-            metric: "Error Rate",
-            before: "45%",
-            after: "25%",
-            improvement: "-44%"
+            metric: "Navigation & Flow",
+            before: "Users found the FAB (+ button) intuitive for adding products and combos.",
+            after: "The distinction between Menu, Categories, and Modifiers tabs was confusing to 5/8 participants — they hesitated before choosing where to start.",
           },
           {
-            metric: "User Satisfaction",
-            before: "2.1/5",
-            after: "3.8/5",
-            improvement: "+81%"
+            metric: "Information Architecture",
+            before: "6/8 users felt the Modifiers section lacked clarity — unsure if it meant “ingredients,” “extras,” or “adiciones pagas.”",
+            after: "Product form fields (name, price, photo) were clear, but optional fields like details were often skipped."
           }
         ],
 
@@ -1217,6 +1261,9 @@ export function CaseStudy({
             after: "4.6/5",
             improvement: "+44%",
           },
+        ],
+
+        testingResults2: [
         ],
 
         // Before/After improvements
@@ -1968,6 +2015,39 @@ export function CaseStudy({
               ),
             )}
           </div>
+
+          {/*testing results 2*/}
+          <div className="space-y-12">
+            {caseStudyData.testingResults2.map(
+              (result2, index) => (
+                <motion.div
+                  key={index}
+                  className="gap-8 items-center py-8 border-b border-gray-200 last:border-b-0"
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{
+                    duration: 0.8,
+                    delay: index * 0.1,
+                  }}
+                  viewport={{ once: true }}
+                >
+
+                  <div>
+                    <h4 className="text-lg font-bold text-black mb-2">
+                      {result2.metric}
+                    </h4>
+                    <p className="text-gray-600 leading-relaxed">
+                      {result2.before}
+                    </p>
+                    <p className="text-gray-600 leading-relaxed">
+                      {result2.after}
+                    </p>
+                  </div>
+                </motion.div>
+              ),
+            )}
+          </div>
+
         </div>
       </section>
 
