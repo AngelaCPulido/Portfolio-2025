@@ -73,6 +73,9 @@ import redLaura from "figma:asset/Red-Laura.png";
 import redUserJoureyLaura from "figma:asset/user-journey-laura-red-salud.png";
 import redUserJoureyMiguel from "figma:asset/user-journey-Miguel-red-salud.png";
 import redUserJoureyAndrea from "figma:asset/user-journey-Andrea-red-salud.png";
+import redEmatrix from "figma:asset/Red-Eisenhower-matrix.png";
+import reddesignsystem from "figma:asset/Red-design-system.png";
+import redResearch from "figma:asset/Red-research.png";
 
 import {
   Carousel,
@@ -1206,22 +1209,19 @@ export function CaseStudy({
             phase: "Research & Discovery",
             insight:
               "Conducted interviews with 9 healthcare professionals (3 GPs, 3 nephrologists, 3 nutritionists) and competitive analysis to understand workflow gaps",
-            image:
-              "https://images.unsplash.com/photo-1691934286085-c88039d93dae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx1c2VyJTIwcmVzZWFyY2glMjBoZWFsdGhjYXJlJTIwaW50ZXJ2aWV3c3xlbnwxfHx8fDE3NTc5NzczMDB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+            image: redResearch
           },
           {
-            phase: "User Journey Mapping",
+            phase: "Design System",
             insight:
-              "Mapped three distinct user journeys from login to actionable patient care for each specialty, identifying key touchpoints and opportunities",
-            image:
-              "https://images.unsplash.com/photo-1618393678132-180ea320c9c4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx1c2VyJTIwam91cm5leSUyMG1hcHBpbmclMjBoZWFsdGhjYXJlfGVufDF8fHx8MTc1NzE3MjgwNXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+              "From there, I built a design system that ensured consistency across every interaction, providing reusable components that made the product scalable and intuitive.",
+            image: reddesignsystem
           },
           {
-            phase: "Iterative Design & Prototyping",
+            phase: "Prioritizing",
             insight:
-              "Developed prototypes guided by real clinical needs, iterating based on continuous feedback from healthcare professionals",
-            image:
-              "https://images.unsplash.com/photo-1627757818592-ce2649563a6c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjB3aXJlZnJhbWVzJTIwZGVzaWduJTIwcHJvY2Vzc3xlbnwxfHx8fDE3NTcxNzI4MDh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+              "Used Eisenhower Matrix to prioritize features and created accessible, intuitive interfaces",
+            image: redEmatrix
           },
         ],
 
