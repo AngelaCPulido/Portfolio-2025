@@ -135,16 +135,6 @@ export function CaseStudy({
           "Surveys",
           "Artifact Review",
         ],
-        
-      // Research insights
-        researchsubtitle: "lastmile We started by listening to those most affected—patients, caregivers, and providers. Our goal was to uncover what truly gets in the way of adherence and engagement.",
-
-        researchtags: [
-          "Lastmile",
-          "Shadowing",
-          "Surveys",
-          "Artifact Review",
-        ], 
 
         researchFindings: [
             { 
@@ -727,7 +717,7 @@ export function CaseStudy({
         researchFindings: [
             { 
               number: "72%",
-              subtitle: "of patients forget daily tasks without proper reminders",
+              subtitle: "of restaurant owners value speed and clarity over complex customization when creating menus.",
             },
             {
               number: "80%",
