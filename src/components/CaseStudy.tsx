@@ -65,6 +65,12 @@ import sucursaljuntos from "figma:asset/juntos-sucursal.png";
 import toppinsjuntos from "figma:asset/juntos-adiciones-toppins.png";
 import ordenesjuntos from "figma:asset/juntos-ordenes.png";
 
+//red de salud
+import redcover from "figma:asset/cover-red-salud.png";
+import redMaria from "figma:asset/Red-Maria.png";
+import redAndres from "figma:asset/Red-Andres.png";
+import redLaura from "figma:asset/Red-Laura.png";
+
 import {
   Carousel,
   CarouselContent,
@@ -584,25 +590,6 @@ export function CaseStudy({
           },
         ],
 
-        // Discovery Outcomes
-        discoveryOutcomes: [
-          {
-            title: "Provider Efficiency",
-            description: "Real-time data syncing improves provider efficiency and reduces manual data entry.",
-            icon: Activity,
-          },
-          {
-            title: "Patient Adherence",
-            description: "Personalized reminders increase adherence by 25% through timely, relevant notifications.",
-            icon: Heart,
-          },
-          {
-            title: "Educational Content",
-            description: "Simplified educational content improves comprehension and engagement for all age groups.",
-            icon: BookOpen,
-          },
-        ],
-
       // Key features lastmile
       
       keyfeaturestitle: "Intelligent solutions designed to transform logistics operations from reactive to proactive.",
@@ -1037,8 +1024,7 @@ export function CaseStudy({
         role: "UX Designer",
         duration: "1 year",
         tools: ["Figma", "FigJam", "Prototyping"],
-        heroImage:
-          "https://images.unsplash.com/photo-1653212883766-132e1977a4b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWxlaGVhbHRoJTIwdmlkZW8lMjBjYWxsJTIwbWVkaWNhbCUyMGRhc2hib2FyZHxlbnwxfHx8fDE3NTc5NzcyNzd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+        heroImage: redcover,
 
         // Project context
         context:
@@ -1151,25 +1137,22 @@ export function CaseStudy({
         // User personas
         personas: [
           {
-            name: "Dr. Ana García",
+            name: "Dr. Laura Martínez",
             role: "General Physician (42)",
-            pain: "Needs efficient telehealth tools and seamless patient record access across specialties",
-            image:
-              "https://images.unsplash.com/photo-1659353888906-adb3e041693?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkb2N0b3IlMjBtZWRpY2FsJTIwcGVyc29uYXMlMjBoZWFsdGhjYXJlJTIwcHJvZmVzc2lvbmFsc3xlbnwxfHx8fDE3NTc5NzcyOTR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+            pain: "Spends too much time updating repetitive patient data across specialties.",
+            image: redLaura,
           },
           {
-            name: "Dr. Carlos Méndez",
+            name: "Dr. Andrés Pérez",
             role: "Nephrologist (38)",
-            pain: "Requires specialized patient monitoring tools and efficient communication with other specialists",
-            image:
-              "https://images.unsplash.com/photo-1659353888906-adb3e041693?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkb2N0b3IlMjBtZWRpY2FsJTIwcGVyc29uYXMlMjBoZWFsdGhjYXJlJTIwcHJvZmVzc2lvbmFsc3xlbnwxfHx8fDE3NTc5NzcyOTR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+            pain: "Lacks clarity on treatment adherence and struggles with patient follow-up.",
+            image: redAndres,
           },
           {
-            name: "Lic. María Rodríguez",
+            name: "María López",
             role: "Nutritionist (35)",
-            pain: "Needs integrated nutrition tracking tools and effective patient education resources",
-            image:
-              "https://images.unsplash.com/photo-1659353888906-adb3e041693?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkb2N0b3IlMjBtZWRpY2FsJTIwcGVyc29uYXMlMjBoZWFsdGhjYXJlJTIwcHJvZmVzc2lvbmFsc3xlbnwxfHx8fDE3NTc5NzcyOTR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+            pain: "Needs an efficient way to calculate calories and create personalized diets for chronic patients.",
+            image: redMaria,
           },
         ],
 
@@ -1198,6 +1181,25 @@ export function CaseStudy({
             description: "An intuitive structure that organizes content and simplifies navigation",
             image: sitemapchs
           }
+        ],
+
+        // Discovery Outcomes
+        discoveryOutcomes: [
+          {
+            title: "Provider Efficiency",
+            description: "A shared, updated patient record would reduce duplication and errors",
+            icon: Activity,
+          },
+          {
+            title: "Patient Adherence",
+            description: "Automated reminders would increase follow-ups and adherence.",
+            icon: Heart,
+          },
+          {
+            title: "Patient engagement",
+            description: "Microlearning modules would improve patient education and engagement.",
+            icon: BookOpen,
+          },
         ],
 
         // Design process insights
