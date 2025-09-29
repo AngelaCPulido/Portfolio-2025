@@ -40,6 +40,11 @@ import interviewslastmile from "figma:asset/Interviews-lastmile.png";
 import wireframeslastmile from "figma:asset/wireframes-lastmile.png";
 import guideslastmile from "figma:asset/guias-b-a-lastmile.png";
 import maplastmile from "figma:asset/map-b-a-lastmile.png";
+import routelastmile from "figma:asset/route-lastmile.png";
+import map2lastmile from "figma:asset/map-lastmile.png";
+import savinglastmile from "figma:asset/Saving-lastmile.png";
+import Routeviewlastmile from "figma:asset/Routeview-lastmile.png";
+
 import {
   Carousel,
   CarouselContent,
@@ -67,6 +72,9 @@ import {
   Speech,
   NotebookPen,
   MessageSquareX,
+  Route,
+  FileUp,
+  Gauge
 } from "lucide-react";
 
 interface CaseStudyProps {
@@ -557,7 +565,7 @@ export function CaseStudy({
           },
         ],
 
-      // Key features
+      // Key features lastmile
       
       keyfeaturestitle: "Intelligent solutions designed to transform logistics operations from reactive to proactive.",
 
@@ -565,17 +573,17 @@ export function CaseStudy({
         {
           title: "Automatic Route planner",
           description: "AI-powered algorithm that generates optimal routes in seconds, considering traffic, delivery windows, and vehicle capacity.",
-          icon: Target
+          icon: Route
         },
         {
           title: "Real-time Tracking Dashboard",
           description: "Live monitoring of all deliveries with predictive alerts for potential delays.",
-          icon: Eye
+          icon: Gauge
         },
         {
           title: "Streamlining Delivery Imports",
           description: "Enabled users to easily upload their delivery lists from Excel through a predefined, customizable template—making the process faster and more intuitive.",
-          icon: Smartphone
+          icon: FileUp
         }
       ],
       
@@ -584,7 +592,7 @@ export function CaseStudy({
       testingSetUp: [
         {
           participants: " 4 total (Operators)",
-          task: "Select vehicles, Add visits, Import visits and Add route details"
+          task: " Select vehicles, Add visits, Import visits and Add route details"
         }
       ],
 
@@ -638,30 +646,30 @@ export function CaseStudy({
 
 
 
-      // Final UI screens
+      // Final UI screens lastmile
       
       finalUI: "A comprehensive platform that transforms complex logistics operations into intuitive, efficient workflows.",
 
       finalScreens: [
         {
-          title: "Dashboard Overview",
-          description: "Command center showing real-time delivery status and key performance metrics",
-          image: "https://images.unsplash.com/photo-1621691187532-bbeb671757ac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBpbnRlcmZhY2UlMjBzY3JlZW5zfGVufDF8fHx8MTc1Njk5MDk1M3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+          title: "Route Optimizer",
+          description: "Collaborative route planning for efficient last-mile deliveries. Drag-and-drop functionality",
+          image: routelastmile
         },
         {
-          title: "Route Optimization",
-          description: "AI-powered route planning with visual map interface and drag-and-drop functionality",
-          image: "https://images.unsplash.com/photo-1681514583222-0579e6835666?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsb2dpc3RpY3MlMjBkZWxpdmVyeSUyMG9wdGltaXphdGlvbnxlbnwxfHx8fDE3NTcxMDQ1MDl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+          title: "Route Optimizer: Map view",
+          description: "Full-screen map updates in real time with every route, distinguished by color codes and numbered stops for easier navigation and error correction.",
+          image: map2lastmile
         },
         {
-          title: "Mobile Driver App",
-          description: "Clean, focused mobile interface for drivers with turn-by-turn navigation",
-          image: "https://images.unsplash.com/photo-1564424555153-04228f0aa7ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjB3aXJlZnJhbWVzfGVufDF8fHx8MTc1NzAzODg1OXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+          title: "Saving a Route instantly adds It to the Routes Panel",
+          description: "Once you save the  new route, it will move to the Routes panel",
+          image: savinglastmile
         },
         {
-          title: "Analytics Dashboard",
-          description: "Comprehensive performance analytics with actionable insights and predictive recommendations",
-          image: "https://images.unsplash.com/photo-1690369519543-c81a2121f740?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhcHAlMjB1aSUyMGRlc2lnbiUyMHN5c3RlbXxlbnwxfHx8fDE3NTcxMDQ1MjB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+          title: "Routes Panel",
+          description: "Real time tracking, integrated with communication tools",
+          image: savinglastmile
         }
       ],
 
