@@ -81,7 +81,10 @@ import {
   MessageSquareX,
   Route,
   FileUp,
-  Gauge
+  Gauge,
+  Settings,
+  HandCoins,
+  CircleX
 } from "lucide-react";
 
 interface CaseStudyProps {
@@ -747,22 +750,22 @@ export function CaseStudy({
 
         painPoints: [
           {
-            title: "Low adherence",
+            title: "Overcomplicated Menu Setup",
             description:
-              "Patients frequently missed medications and daily tasks due to poor reminders.",
-            icon: Activity,
+              "Too many steps slow down the process of adding or grouping dishes, creating frustration and drop-offs.",
+            icon: Settings,
           },
           {
-            title: "Overwhelmed caregivers",
+            title: "Hidden Revenue Opportunities",
             description:
-              "Family members lacked clear tools to monitor and support care activities.",
-            icon: Activity,
+              "Confusing flows make it difficult to set up and manage paid extras, limiting one of the biggest sources of restaurant income.",
+            icon: HandCoins,
           },
           {
-            title: "Fragmented data",
+            title: "Fear of Costly Mistakes",
             description:
-              "Providers struggled with incomplete and dispersed health records.",
-            icon: Activity,
+              "Restaurant owners worry about errors going live instantly, causing stress and lack of confidence when updating menus.",
+            icon: CircleX,
           },
         ],
 
