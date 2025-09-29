@@ -691,7 +691,7 @@ export function CaseStudy({
     if (id === 3) {
       // Juntos case study
       return {
-        title: "+Juntos Negocios: Empowering Local Restaurants",
+        title: "+Juntos: Empowering Local Restaurants",
         subtitle: "From Customer Feedback to Seamless Menu Creation: A Journey to Digital Independence",
         tags: ["Restaurant Tech", "Menu Design", "Small Business", "Online Orders", "Digital Transformation" ],
         client: "+ Juntos",
@@ -716,7 +716,7 @@ export function CaseStudy({
         ],
         
         // Research insights
-        researchsubtitle: " Juntos We started by listening to those most affected—patients, caregivers, and providers. Our goal was to uncover what truly gets in the way of adherence and engagement.",
+        researchsubtitle: "Uncovering pain points and best practices to shape a seamless menu creation experience.",
 
         researchtags: [
           "Juntos",
