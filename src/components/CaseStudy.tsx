@@ -772,21 +772,21 @@ export function CaseStudy({
         // User personas
         personas: [
           {
-            name: "María",
-            role: "Senior Patient (78)",
-            pain: "Struggles with technology, forgets medications, needs family support",
+            name: "María López",
+            role: "34, Owner of a family-run taquería in Mexico City",
+            pain: "Current menu tools are rigid and confusing",
             image: "https://images.unsplash.com/photo-1691934286085-c88039d93dae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx1c2VyJTIwcmVzZWFyY2glMjBwZXJzb25hcyUyMGhlYWx0aGNhcmV8ZW58MXx8fHwxNzU3MTcyODAyfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
           },
           {
-            name: "Laura",
-            role: "Family Caregiver",
-            pain: "Managing multiple care plans, coordinating with providers, tracking progress",
+            name: "Carlos Mendoza",
+            role: "42, Manager of a small seafood restaurant in Monterrey",
+            pain: "Digitize his menu quickly without paying high commissions",
             image: "https://images.unsplash.com/photo-1691934286085-c88039d93dae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx1c2VyJTIwcmVzZWFyY2glMjBwZXJzb25hcyUyMGhlYWx0aGNhcmV8ZW58MXx8fHwxNzU3MTcyODAyfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
           },
           {
-            name: "Dr. James",
-            role: "Healthcare Provider",
-            pain: "Accessing real-time patient data, coordinating care teams, managing caseload",
+            name: "Ana Torres",
+            role: "28, Runs a coffee shop in Guadalajara",
+            pain: "Hard to track orders from multiple channels",
             image: "https://images.unsplash.com/photo-1691934286085-c88039d93dae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx1c2VyJTIwcmVzZWFyY2glMjBwZXJzb25hcyUyMGhlYWx0aGNhcmV8ZW58MXx8fHwxNzU3MTcyODAyfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
           }
         ],
