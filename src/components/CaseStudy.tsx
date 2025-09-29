@@ -720,8 +720,8 @@ export function CaseStudy({
               subtitle: "of restaurant owners value speed and clarity over complex customization when creating menus.",
             },
             {
-              number: "80%",
-              subtitle: "of providers face delays with outdated patient data",
+              number: "64%",
+              subtitle: "confirmed that paid add-ons (extras like cheese, sauces, etc.) are one of their biggest revenue drivers, yet most tools make them hidden or difficult to manage.",
             },
             {
               number: "65%",
@@ -731,15 +731,15 @@ export function CaseStudy({
         keyInsights: [
           { 
             title: "72%",
-            description: "of patients forget daily tasks without proper reminders",
+            description: "of restaurant owners value speed and clarity over complex customization when creating menus.",
           },
           {
-            title: "80%",
-            description: "of providers face delays with outdated patient data",
+            title: "64%",
+            description: "confirmed that paid add-ons (extras like cheese, sauces, etc.) are one of their biggest revenue drivers, yet most tools make them hidden or difficult to manage.",
           },
           {
-            title: "65%",
-            description: "of caregivers struggle with complex care plan navigation",
+            title: "58%",
+            description: " mentioned that too many steps or unclear flows lead to abandoned setups.",
           },
         ],
         
