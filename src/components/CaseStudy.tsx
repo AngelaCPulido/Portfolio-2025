@@ -88,7 +88,10 @@ import {
   Gauge,
   Settings,
   HandCoins,
-  CircleX
+  CircleX,
+  HandPlatter,
+  Pizza,
+  Group
 } from "lucide-react";
 
 interface CaseStudyProps {
@@ -838,23 +841,23 @@ export function CaseStudy({
 
         // Key features
         
-        keyfeaturestitle: "Juntos Intelligent solutions designed to transform logistics operations from reactive to proactive.",
+        keyfeaturestitle: "The essential tools that empower restaurants to build, manage, and optimize their digital menus seamlessly.",
 
         keyFeatures: [
           {
-            title: "Juntos Smart Daily Reminders",
-            description: "Intelligent task reminders with wearable device sync, ensuring patients never miss critical care activities.",
-            icon: Activity
+            title: "Add Products & Combos",
+            description: "Easily create and customize individual dishes or bundle them into attractive combos to boost sales.",
+            icon: Pizza
           },
           {
-            title: "Unified Care Dashboard",
-            description: "Real-time dashboard providing providers instant access to patient data, care plans, and progress tracking.",
-            icon: Eye
+            title: "Paid Add-Ons",
+            description: "Give customers the freedom to personalize their meals with extra toppings, sauces, or premium additions.",
+            icon: HandPlatter
           },
           {
-            title: "Accessible Education Hub",
-            description: "Searchable video library with simplified content designed for different literacy levels and accessibility needs.",
-            icon: BookOpen
+            title: "Menu Categories",
+            description: "Organize your menu into clear sections, making it simple for customers to browse and order.",
+            icon: Group
           }
         ],
         
