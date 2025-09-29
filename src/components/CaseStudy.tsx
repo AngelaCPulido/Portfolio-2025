@@ -719,10 +719,9 @@ export function CaseStudy({
         researchsubtitle: "Uncovering pain points and best practices to shape a seamless menu creation experience.",
 
         researchtags: [
-          "Juntos",
+          "Interviews",
           "Shadowing",
-          "Surveys",
-          "Artifact Review",
+          "Competitor Analysis",
         ],
         
         researchFindings: [
