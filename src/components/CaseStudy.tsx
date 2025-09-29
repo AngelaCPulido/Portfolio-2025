@@ -59,7 +59,7 @@ import modifiersjuntos from "figma:asset/juntos-modifiers.png";
 import prefillingjuntos from "figma:asset/juntos-pre-filling.png";
 import productojuntos from "figma:asset/juntos-producto.png";
 import adicionesjuntos from "figma:asset/juntos-adiciones.png";
-import prototypejuntos from "figma:asset/juntos-prototipo.gif";
+import prototypejuntos from "figma:asset/juntos-prototipo.mp4";
 import cartajuntos from "figma:asset/juntos-carta.png";
 import sucursaljuntos from "figma:asset/juntos-sucursal.png";
 import toppinsjuntos from "figma:asset/juntos-adiciones-toppins.png";
@@ -976,9 +976,9 @@ export function CaseStudy({
 
         finalScreens: [
           {
-            title: "Prototype",
-            description: "Simplified interface for tracking daily activities with visual progress indicators and reminders",
-            image: prototypejuntos,
+            title: "Prototype Walkthrough",
+            description: "A complete journey across screens, flows, and key interactions.",
+            video: prototypejuntos,
           },
           {
             title: "Onboarding & Product Setup",
@@ -2209,11 +2209,21 @@ export function CaseStudy({
                           whileHover={{ scale: 1.02 }}
                           transition={{ duration: 0.4 }}
                         >
-                          <ImageWithFallback
-                            src={screen.image}
-                            alt={screen.title}
-                            className="w-full h-[500px] md:h-[600px] object-cover"
-                          />
+                          {screen.video ? (
+                            <video
+                              src={screen.video}
+                              controls
+                              className="w-full h-[500px] md:h-[600px] object-cover"
+                              poster={screen.poster} // Opcional: una portada
+                            />
+                            ) : (
+                            <ImageWithFallback
+                              src={screen.image}
+                              alt={screen.title}
+                              className="w-full h-[500px] md:h-[600px] object-cover"
+                            />
+                          )}
+
                         </motion.div>
                         <h3 className="text-2xl font-bold text-black mb-4">
                           {screen.title}
