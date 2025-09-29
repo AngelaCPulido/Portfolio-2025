@@ -52,8 +52,9 @@ import carlosjuntos from "figma:asset/carlos-juntos.png";
 import anajuntos from "figma:asset/Ana-juntos.png";
 import empathyjuntos from "figma:asset/empathymap-juntos.png";
 import ematrixjuntos from "figma:asset/Eisenhowermatrix-juntos.png";
-
-
+import wireframesjuntos from "figma:asset/wireframes-juntos.png";
+import designjuntos from "figma:asset/design-system-juntos.png";
+import usabilityjuntos from "figma:asset/usability-test-juntos.png";
 
 import {
   Carousel,
@@ -819,19 +820,19 @@ export function CaseStudy({
         // Design process insights
         processInsights: [
           {
-            phase: "Juntos Research & Discovery",
-            insight: "Interviewed 24 participants across patient, caregiver, and provider groups to understand pain points",
-            image: "https://images.unsplash.com/photo-1691934286085-c88039d93dae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx1c2VyJTIwcmVzZWFyY2glMjBwZXJzb25hcyUyMGhlYWx0aGNhcmV8ZW58MXx8fHwxNzU3MTcyODAyfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+            phase: "Wirefriming",
+            insight: "I started by sketching low-fidelity wireframes that allowed us to visualize the flow of creating and editing menus, testing ideas quickly without being constrained by visuals.",
+            image: wireframesjuntos,
           },
           {
-            phase: "User Journey Mapping",
-            insight: "Mapped María's daily routine before and after CHS implementation showing key friction points",
-            image: "https://images.unsplash.com/photo-1618393678132-180ea320c9c4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx1c2VyJTIwam91cm5leSUyMG1hcHBpbmclMjBoZWFsdGhjYXJlfGVufDF8fHx8MTc1NzE3MjgwNXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+            phase: "Design System",
+            insight: "From there, I built a design system that ensured consistency across every interaction, providing reusable components that made the product scalable and intuitive.",
+            image: designjuntos
           },
           {
-            phase: "Design & Prototyping",
-            insight: "Used Eisenhower Matrix to prioritize features and created accessible, intuitive interfaces",
-            image: "https://images.unsplash.com/photo-1627757818592-ce2649563a6c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjB3aXJlZnJhbWVzJTIwZGVzaWduJTIwcHJvY2Vzc3xlbnwxfHx8fDE3NTcxNzI4MDh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+            phase: "Usability Testing",
+            insight: "Finally, we validated our assumptions through usability testing, observing how real restaurant owners interacted with the prototype and refining the experience based on their feedback.",
+            image: usabilityjuntos
           }
         ],
 
