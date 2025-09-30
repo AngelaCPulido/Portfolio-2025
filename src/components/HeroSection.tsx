@@ -21,14 +21,14 @@ export function HeroSection() {
               transition: { duration: 0.2 },
             }}
           >
-            I design user-centered
+            Human-Centered
             <br />
             <span className="text-gray-600">
-              digital experiences
+              Design for a 
             </span>
             <br />
             <span className="text-gray-400">
-              that drive results
+              Better Digital Future
             </span>
           </motion.h1>
 
@@ -38,7 +38,7 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.6 }}
           >
-            Helping startups and enterprises increase conversion through thoughtful UX design, strategic insights, and data-driven solutions.
+            Blending strategy, research, and design systems to create intuitive solutions for people, tech & health industries.
           </motion.p>
 
           <motion.div
