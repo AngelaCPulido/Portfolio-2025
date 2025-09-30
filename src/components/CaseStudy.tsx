@@ -112,7 +112,9 @@ import {
   CircleX,
   HandPlatter,
   Pizza,
-  Group
+  Group,
+  RefreshCwOff,
+  ClipboardPlus,
 } from "lucide-react";
 
 interface CaseStudyProps {
@@ -1078,13 +1080,11 @@ export function CaseStudy({
         ],
 
         // Research insights
-        researchsubtitle: " red de salud We started by listening to those most affected—patients, caregivers, and providers. Our goal was to uncover what truly gets in the way of adherence and engagement.",
+        researchsubtitle: " Understanding gaps in patient–doctor workflows.",
         
         researchtags: [
-          "Red",
-          "Shadowing",
-          "Surveys",
-          "Artifact Review",
+          "Interviews",
+          "Competitor Analysis",
         ],
 
         researchFindings: [
@@ -1104,16 +1104,16 @@ export function CaseStudy({
 
         keyInsights: [
           { 
-            title: "72%",
-            description: "of patients forget daily tasks without proper reminders",
-          },
-          {
             title: "80%",
-            description: "of providers face delays with outdated patient data",
+            description: "of professionals spend extra time duplicating medical history across specialties.",
           },
           {
-            title: "65%",
-            description: "of caregivers struggle with complex care plan navigation",
+            title: "60%",
+            description: "of doctors highlighted the importance of automating reminders and records to reduce no-shows.",
+          },
+          {
+            title: "75%",
+            description: "of nutritionists emphasized the lack of dynamic tools to calculate kcal and personalize diets.",
           },
         ],
 
@@ -1121,22 +1121,22 @@ export function CaseStudy({
 
         painPoints: [
           {
-            title: "Low adherence",
+            title: "Disconnection Between Specialists",
             description:
-              "Patients frequently missed medications and daily tasks due to poor reminders.",
-            icon: Activity,
+              "7/9 doctors confirmed they cannot access each other’s notes or patient history.",
+            icon: RefreshCwOff,
           },
           {
-            title: "Overwhelmed caregivers",
+            title: "Communication Gaps with Patients",
             description:
-              "Family members lacked clear tools to monitor and support care activities.",
-            icon: Activity,
+              "8/9 doctors use informal channels (mostly WhatsApp) but without system integration or compliance.",
+            icon: MessageSquareX,
           },
           {
-            title: "Fragmented data",
+            title: "Time-Consuming Administrative Work",
             description:
-              "Providers struggled with incomplete and dispersed health records.",
-            icon: Activity,
+              "On average, doctors spend 25% of consultations repeating histories or preparing instructions.",
+            icon: ClipboardPlus,
           },
         ],
 
