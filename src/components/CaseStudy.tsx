@@ -1258,14 +1258,14 @@ export function CaseStudy({
 
         testingSetUp: [
           {
-            participants: "Red 8 total (seniors, caregivers, providers)",
-            task: "Red Onboarding, journal tasks, care plan access, education, communication, emergency response, medication management"
+            participants: " 9 (3 GPs, 3 nephrologists, 3 nutritionists)",
+            task: " Creating new consultation, updating history, prescribing medication, generating reports."
           }
         ],
 
         testingResults: [
           {
-            metric: "Completion Rate",
+            metric: "Task Completion Rate",
             before: "58%",
             after: "92%",
             improvement: "+59%",
