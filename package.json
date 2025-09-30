@@ -63,5 +63,8 @@
         "tailwindcss": "^4.1.13",
         "vite": "^6.3.6",
         "vite-plugin-singlefile": "^2.3.0"
+    },
+    "optionalDependencies": {
+        "@rollup/rollup-linux-x64-gnu": "*"
     }
 }
