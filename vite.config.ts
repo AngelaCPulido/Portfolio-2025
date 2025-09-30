@@ -64,7 +64,7 @@ export default defineConfig({
   ],
   esbuild: {
     target: 'esnext',
-    platform: 'linux',
+    platform: 'node',
   }
 })
 
