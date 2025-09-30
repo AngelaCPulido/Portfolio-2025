@@ -76,6 +76,11 @@ import redUserJoureyAndrea from "figma:asset/user-journey-Andrea-red-salud.png";
 import redEmatrix from "figma:asset/Red-Eisenhower-matrix.png";
 import reddesignsystem from "figma:asset/Red-design-system.png";
 import redResearch from "figma:asset/Red-research.png";
+import redCallingBA from "figma:asset/Red-Calling-before-after.png";
+import redKCalBA from "figma:asset/Red-KCal-total-before-after.png";
+import redNutritionBA from "figma:asset/Red-Nutrition-before-after.png";
+import redPrescriptionBA from "figma:asset/Red-Prescription-before-After.png";
+import redTaskBA from "figma:asset/Red-Task-before-After.png";
 
 import {
   Carousel,
@@ -1290,31 +1295,44 @@ export function CaseStudy({
         // Before/After improvements
         improvements: [
           {
-            area: "Video Call Interface",
+            area: "Report export (send or print)",
             before:
-              "Basic video calling without integrated patient data access during consultations",
+              "Confusion between “Send” vs “Print” summary options",
             after:
-              "Video call screen with real-time record updates, allowing doctors to modify patient information during the consultation",
-            image:
-              "https://images.unsplash.com/photo-1653212883766-132e1977a4b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWxlaGVhbHRoJTIwdmlkZW8lMjBjYWxsJTIwbWVkaWNhbCUyMGRhc2hib2FyZHxlbnwxfHx8fDE3NTc5NzcyNzd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+              "Simplify action labels and unify workflow for report sharing",
+            image: redCallingBA
           },
           {
-            area: "Dashboard & Waiting Room",
+            area: "Prescription save options",
             before:
-              "Fragmented dashboard with limited patient visibility and scheduling conflicts",
+              "Nephrologists feel unsure about autosave when updating history",
             after:
-              "Unified dashboard with integrated waiting room, patient queue management, and comprehensive overview",
-            image:
-              "https://images.unsplash.com/photo-1747224317356-6dd1a4a078fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoZWFsdGhjYXJlJTIwZGFzaGJvYXJkJTIwaW50ZXJmYWNlfGVufDF8fHx8MTc1NzkyNzY2NHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+              "Visible save feedback and confirmation messages",
+            image: redPrescriptionBA
           },
           {
-            area: "Nutrition Module",
+            area: "Task Module",
             before:
-              "Manual nutrition tracking without integrated calculation tools",
+              "No visible feedback to prevent duplicates",
             after:
-              "Advanced nutrition module with built-in kcal calculator, meal planning, and progress tracking",
-            image:
-              "https://images.unsplash.com/photo-1641439927222-6138ce56f90d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZWRpY2FsJTIwbnV0cml0aW9uJTIwY2FsY3VsYXRvciUyMGFwcHxlbnwxfHx8fDE3NTc5NzcyODZ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+              "Add validation to prevent duplicates",
+            image: redTaskBA
+          },
+          {
+            area: "Kcal calculation",
+            before:
+              "Users struggled to locate the kcal calculation hidden in secondary steps.",
+            after:
+              "Made kcal calculation more visible by moving it up and integrating it into the main flow.",
+            image: redTaskBA
+          },
+          {
+            area: "Simplify nutritionist workflow",
+            before:
+              "Diet fields felt restrictive and cluttered with unnecessary inputs.",
+            after:
+              "Streamlined fields to reduce cognitive load and focus only on essential options.",
+            image: redNutritionBA
           },
         ],
 
