@@ -61,7 +61,7 @@
         "@vitejs/plugin-react": "^5.0.3",
         "@vitejs/plugin-react-swc": "^3.10.2",
         "tailwindcss": "^4.1.13",
-        "vite": "6.3.5",
+        "vite": "^6.3.6",
         "vite-plugin-singlefile": "^2.3.0"
     }
 }
