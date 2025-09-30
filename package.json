@@ -65,11 +65,12 @@
         "vite-plugin-singlefile": "^2.3.0"
     },
     "optionalDependencies": {
-      "@rollup/rollup-linux-x64-gnu": "4.9.5"
+        "@rollup/rollup-linux-arm64-gnu": "^4.0.0",
+        "@rollup/rollup-linux-x64-gnu": "^4.9.5"
     },
     "overrides": {
-      "vite": {
-        "rollup": "npm:@rollup/wasm-node"
-      }
+        "vite": {
+            "rollup": "npm:@rollup/wasm-node"
+        }
     }
 }
