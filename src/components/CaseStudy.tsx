@@ -9,7 +9,7 @@ import jamesImage from "figma:asset/james.png";
 import userjourneychs from "figma:asset/user-journey-chs.png";
 import empathychs1 from "figma:asset/Empathy-map-maria.png";
 import empathychs2 from "figma:asset/Empathy-map-laura.png";
-import sitemapchs from "figma:asset/sitemap.png";
+import sitemapchs from "figma:asset/Sitemap.png";
 import ematrixchs from "figma:asset/eisenhower-matrix-chs.png";
 import focuschs from "figma:asset/focus-areas-chs.png";
 import collagechs from "figma:asset/Collage-CHS.png";
