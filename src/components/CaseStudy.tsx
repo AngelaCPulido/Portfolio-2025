@@ -81,6 +81,15 @@ import redKCalBA from "figma:asset/Red-KCal-total-before-after.png";
 import redNutritionBA from "figma:asset/Red-Nutrition-before-after.png";
 import redPrescriptionBA from "figma:asset/Red-Prescription-before-After.png";
 import redTaskBA from "figma:asset/Red-Task-before-After.png";
+import redCall from "figma:asset/Red-Call.png";
+import redDasboard from "figma:asset/Red-Dashboard.png";
+import redIndicadores from "figma:asset/Red-Indicadores.png";
+import redAgenda from "figma:asset/Red-Agenda.png";
+import redConsulta from "figma:asset/Red-Consulta-general.png";
+import redNutricion from "figma:asset/Red-Nutricion.png";
+import redConsultaEnviar from "figma:asset/Red-Consulta-general-enviar.png";
+import redHistoria from "figma:asset/Red-Historia-clinica.png";
+import redModulos from "figma:asset/Red-Modulos.png";
 
 import {
   Carousel,
@@ -1324,7 +1333,7 @@ export function CaseStudy({
               "Users struggled to locate the kcal calculation hidden in secondary steps.",
             after:
               "Made kcal calculation more visible by moving it up and integrating it into the main flow.",
-            image: redTaskBA
+            image: redKCalBA
           },
           {
             area: "Simplify nutritionist workflow",
@@ -1338,26 +1347,26 @@ export function CaseStudy({
 
         // Final impact metrics
 
-        ImpactResults: "CHS Care Management delivered significant improvements in patient outcomes, provider efficiency, and overall care coordination.",
+        ImpactResults: "How Red de Salud transformed clinical workflows and patient engagement",
 
         impactMetrics: [
           {
-            label: "Faster Record Updates",
+            label: "faster patient record updates (vs. manual process).",
             value: "45%",
             color: "text-blue-600",
           },
           {
-            label: "More Follow-ups",
+            label: "increase in patient follow-ups with automated reminders.",
             value: "60%",
             color: "text-green-600",
           },
           {
-            label: "Microlearning Engagement",
+            label: "more engagement with microlearning vs. static brochures.",
             value: "3x",
             color: "text-purple-600",
           },
           {
-            label: "Collaboration Improvement",
+            label: "of physicians reported improved collaboration across specialties.",
             value: "80%",
             color: "text-orange-600",
           },
@@ -1365,41 +1374,67 @@ export function CaseStudy({
 
         // Final UI screens
   
-        finalUI: "A comprehensive platform that transforms complex logistics operations into intuitive, efficient workflows.",
+        finalUI: "Red de Salud: A platform that adapts to every specialty",
 
         finalScreens: [
           {
             title: "Video Call with Real-time Updates",
             description:
               "Integrated video consultation interface allowing doctors to update patient records in real-time during appointments",
-            image:
-              "https://images.unsplash.com/photo-1653212883766-132e1977a4b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWxlaGVhbHRoJTIwdmlkZW8lMjBjYWxsJTIwbWVkaWNhbCUyMGRhc2hib2FyZHxlbnwxfHx8fDE3NTc5NzcyNzd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+            image: redCall
           },
           {
             title: "Dashboard with Waiting Room",
             description:
               "Comprehensive dashboard providing overview of patient queue, appointments, and key metrics with integrated waiting room management",
-            image:
-              "https://images.unsplash.com/photo-1747224317356-6dd1a4a078fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoZWFsdGhjYXJlJTIwZGFzaGJvYXJkJTIwaW50ZXJmYWNlfGVufDF8fHx8MTc1NzkyNzY2NHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+            image: redDasboard
           },
           {
             title: "Nutrition Module & Calculator",
             description:
               "Advanced nutrition tracking interface with built-in kcal calculator, meal planning tools, and patient progress monitoring",
-            image:
-              "https://images.unsplash.com/photo-1641439927222-6138ce56f90d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZWRpY2FsJTIwbnV0cml0aW9uJTIwY2FsY3VsYXRvciUyMGFwcHxlbnwxfHx8fDE3NTc5NzcyODZ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+            image: redNutricion
           },
           {
-            title: "Patient History & Records",
+            title: "Patient History",
             description:
               "Comprehensive patient history interface with 10+ integrated modules covering all aspects of patient care and medical history",
-            image:
-              "https://images.unsplash.com/photo-1631563020941-c0c6bc534b8e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwYXRpZW50JTIwbWVkaWNhbCUyMGhpc3RvcnklMjBkaWdpdGFsfGVufDF8fHx8MTc1Nzk3NzI5MHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+            image: redHistoria
           },
+          {
+            title: "Medical agenda",
+            description:
+              "Medical agenda synced with activities & appointments",
+            image: redAgenda
+          },
+          {
+            title: "Patient Records",
+            description:
+              "Anthropometric & biochemical indicators with historical charts.",
+            image: redIndicadores
+          },
+          {
+            title: "Report export",
+            description:
+              "Report export (send or print).",
+            image: redConsultaEnviar
+          },          
+          {
+            title: "Comprehensive Consultation Dashboard",
+            description:
+              "Centralized modules for medical history, treatments, vitals, prescriptions, tasks, and reports—all in one unified view.",
+            image: redConsulta
+          },
+          {
+            title: "+10 modules designed",
+            description:
+              "Centralized modules for medical history, Prescriptions, vitals, tasks, allergies, lipids profile, etc.",
+            image: redModulos
+          },                    
         ],
 
         //Reflection
-        Reflection: "REd This project reinforced the importance of deep user research in B2B environments. Complex enterprise workflows require careful balance between powerful functionality and intuitive design. The success came from focusing on the user's primary goal: getting their job done efficiently."
+        Reflection: "Designing for healthcare taught me the importance of bridging clinical rigor with usability. By embedding doctors in every stage of the process, we ensured the product was not only functional but also aligned with their real daily workflows. The result was a platform that redefined patient management in telehealth."
 
       };
     } 
