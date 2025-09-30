@@ -115,6 +115,8 @@ import {
   Group,
   RefreshCwOff,
   ClipboardPlus,
+  FolderSync,
+  MessageCircle,
 } from "lucide-react";
 
 interface CaseStudyProps {
@@ -1164,7 +1166,7 @@ export function CaseStudy({
 
         // User journey & empathy map
 
-        UnderstandingUser: "Exploring the real-life flows, pain points, and opportunities for each specialist",
+        UnderstandingUser: "Understanding gaps in patient–doctor workflows while leveraging AI tools (ChatGPT & Perplexity) to accelerate interview analysis and structure research outcomes.",
 
         userjourney: [
           {
@@ -1187,18 +1189,18 @@ export function CaseStudy({
         // Discovery Outcomes
         discoveryOutcomes: [
           {
-            title: "Provider Efficiency",
-            description: "A shared, updated patient record would reduce duplication and errors",
-            icon: Activity,
+            title: "Shared Patient Profile Across Specialists",
+            description: "If doctors can share a unified patient record, collaboration will improve and duplicated work will decrease.",
+            icon: FolderSync,
           },
           {
-            title: "Patient Adherence",
-            description: "Automated reminders would increase follow-ups and adherence.",
-            icon: Heart,
+            title: "Integrated Patient Communication via WhatsApp",
+            description: "If the platform enables secure reminders and follow-ups via WhatsApp, patient engagement will rise.",
+            icon: MessageCircle,
           },
           {
-            title: "Patient engagement",
-            description: "Microlearning modules would improve patient education and engagement.",
+            title: "Personalized Templates for Education & Reports",
+            description: "If doctors can customize reports and microlearning content, patients will better understand and follow treatment plans.",
             icon: BookOpen,
           },
         ],
