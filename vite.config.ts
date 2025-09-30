@@ -62,5 +62,11 @@ export default defineConfig({
     removeVersionSpecifiers(), 
     ...(produceSingleFile ? [viteSingleFile()] : [])
   ],
+  esbuild: {
+    target: 'esnext',
+    platform: 'linux',
+  }
 })
+
+
 
