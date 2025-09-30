@@ -117,6 +117,8 @@ import {
   ClipboardPlus,
   FolderSync,
   MessageCircle,
+  CalendarSync, 
+  FileSliders,
 } from "lucide-react";
 
 interface CaseStudyProps {
@@ -1229,26 +1231,26 @@ export function CaseStudy({
 
         // Key features
         
-        keyfeaturestitle: "Red Intelligent solutions designed to transform logistics operations from reactive to proactive.",
+        keyfeaturestitle: "Empowering Healthcare Professionals with Seamless Patient Management",
 
         keyFeatures: [
           {
-            title: "Shared Digital Record",
+            title: "Unified Patient History",
             description:
-              "Centralized patient records accessible across all healthcare specialties with real-time updates and comprehensive medical history.",
-            icon: Shield,
+              "Physicians can access and update patient histories in real time, ensuring that every specialist sees the same accurate information without duplication.",
+            icon: FolderSync,
           },
           {
-            title: "Automated Patient Engagement",
+            title: "Smart Scheduling & Notifications",
             description:
-              "Smart reminder system and automated follow-up tools that increase patient adherence and engagement with care plans.",
-            icon: Activity,
+              "Sync calendars, manage appointments, and send automated reminders through WhatsApp and email to reduce no-shows and improve treatment adherence.",
+            icon: CalendarSync,
           },
           {
-            title: "Microlearning for Patients",
+            title: "Personalized Care Tools",
             description:
-              "Personalized educational content delivered in digestible formats to improve patient understanding and health outcomes.",
-            icon: BookOpen,
+              "Create customizable consultation templates, prescriptions, and microlearning courses that help patients understand their condition and follow their care plan effectively.",
+            icon: FileSliders,
           },
         ],
 
