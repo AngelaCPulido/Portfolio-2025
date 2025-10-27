@@ -70,7 +70,7 @@ export function Header() {
                 <Linkedin size={16} />
               </motion.a>
               <motion.a
-                href="https://behance.net/angelacarolina"
+                href="https://www.behance.net/angelapulido"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 bg-gray-100 rounded-full flex items-center justify-center text-black hover:bg-gray-200 transition-all duration-200"
