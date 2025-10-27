@@ -61,7 +61,7 @@ export function Header() {
             {/* Social Links */}
             <div className="hidden lg:flex items-center gap-3">
               <motion.a
-                href="https://www.linkedin.com/in/angela-pulido/"
+                href="https://www.linkedin.com/in/angelacarolinapulido/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 bg-gray-100 rounded-full flex items-center justify-center text-black hover:bg-gray-200 transition-all duration-200"

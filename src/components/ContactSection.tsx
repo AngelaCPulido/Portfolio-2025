@@ -12,9 +12,9 @@ export function ContactSection() {
     },
     {
       label: "LinkedIn",
-      href: "https://www.linkedin.com/in/angela-pulido/",
+      href: "https://www.linkedin.com/in/angelacarolinapulido//",
       icon: Linkedin,
-      description: "/in/angela-carolina"
+      description: "/in/angelacarolinapulido"
     },
     {
       label: "Behance",
